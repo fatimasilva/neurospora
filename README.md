@@ -1,4 +1,4 @@
-neurorspora
+neurospora
 ===========
 
 Neurospora community information
