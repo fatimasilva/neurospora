@@ -1,0 +1,54 @@
+We recently discovered an issue with the way locus tags were assigned to our most recent Neurospora gene set, released publicly on the Broad website in June of 2010. Many genes in this gene set have mismatched locus numbers compared to the same genes released in February 2010. Adding to the confusion, both releases were labeled version 4.
+
+To remedy this we have recalled the June locus numbers and released a newly-numbered gene set as version 5. Genes in this set have been numbered to preserve historical locus numbers (back to the original GenBank release) as much as possible.
+
+Scientists who have been identifying genes with their v1, v2 or v3 numbers can search for them on our web page, which will map them to v5 automatically and accurately. The same will work for most v4 numbers. Unfortunately, 863 genes have different locus tags in the two v4 releases. If you search for one of them, you will get two hits - the v5 gene that the February release mapped to, and the v5 gene that the June release mapped to.
+
+Two examples to clarify:
+
+A. Suppose you search for NCU11713.4 on our web page. This query will retrieve two genes, NCU11688.5 and NCU11713.5. The gene called NCU11713.4 in February is different from the gene called NCU11713.4 in June. The February gene maps to NCU11688.5, while the June edition maps to NCU11713.5.
+
+B. Searching for NCU11324.4 yields but one hit because that gene, like most genes, was consistently numbered between the two releases labeled 4.
+
+If you are not sure when you downloaded your genes, the following may help. If you see any of these locus numbers in your gene set:
+
+NCU00129.4, NCU00457.4, NCU00499.4, NCU00556.4, NCU00627.4,
+NCU00685.4, NCU00768.4, NCU00856.4, NCU00986.4, NCU01064.4,
+NCU01065.4, NCU01282.4, NCU01299.4, NCU01300.4, NCU01483.4,
+NCU01559.4, NCU01560.4, NCU01610.4, NCU01611.4, NCU01664.4,
+NCU01665.4, NCU01871.4, NCU01903.4, NCU02200.4, NCU02259.4,
+NCU02666.4, NCU02758.4, NCU02837.4, NCU02998.4, NCU03047.4,
+NCU03206.4, NCU03773.4, NCU04239.4, NCU04240.4, NCU04518.4,
+NCU04519.4, NCU04710.4, NCU04711.4, NCU05275.4, NCU05512.4,
+NCU05776.4, NCU06013.4, NCU06370.4, NCU06732.4, NCU07107.4,
+NCU07259.4, NCU07260.4, NCU07301.4, NCU07405.4, NCU07856.4,
+NCU07857.4, NCU08090.4, NCU08182.4, NCU08323.4, NCU08332.4,
+NCU09085.4, NCU09256.4, NCU09257.4, NCU09998.4, NCU10166.4,
+NCU10574.4, NCU11040.4, NCU11240.4, NCU11253.4, NCU11376.4,
+NCU11390.4, NCU11393.4
+
+then your genes are from the February 2010 gene set. However, if you see
+
+NCU00082.4, NCU00083.4, NCU00084.4, NCU00085.4, NCU00516.4,
+NCU01819.4, NCU04299.4, NCU04300.4, NCU04301.4, NCU04302.4,
+NCU04303.4, NCU04304.4, NCU04305.4, NCU05000.4, NCU05111.4,
+NCU05112.4, NCU05113.4, NCU05114.4, NCU05115.4, NCU05116.4,
+NCU05448.4, NCU05452.4, NCU06667.4, NCU07323.4, NCU09066.4,
+NCU10179.4, NCU10301.4, NCU10379.4, NCU10383.4, NCU10753.4,
+NCU10866.4, NCU10914.4, NCU11068.4, NCU11182.4, NCU12157.4,
+NCU12158.4, NCU12159.4, NCU12160.4, NCU12161.4, NCU12162.4,
+NCU12163.4, NCU12164.4, NCU12165.4, NCU12166.4, NCU12167.4,
+NCU12168.4, NCU12169.4, NCU12170.4, NCU12171.4, NCU12172.4,
+NCU12173.4, NCU12174.4, NCU12175.4, NCU12176.4, NCU12177.4,
+NCU12178.4, NCU12179.4, NCU12180.4, NCU12181.4, NCU12182.4,
+NCU12183.4, NCU12184.4, NCU12185.4, NCU12186.4, NCU12187.4,
+NCU12188.4
+
+then your genes are from the June 2010 release.
+
+On this web page please find five mapping tables which can be used to migrate locus numbers from any of the previous releases to the latest version 5 locus tags. The mappings files are located at
+
+http://www.broadinstitute.org/annotation/genome/neurospora.11/assets/neurosporaLocusMappings.tar
+
+We apologize for any confusion this may cause.
+
