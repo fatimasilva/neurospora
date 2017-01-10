@@ -1,0 +1,195 @@
+---
+title: "Neurospora Broad GeneID Mappings"
+output: html_document
+---
+
+## Intro
+
+Generate tab files to load previous ids into FungiDB, one entry per row. There is an excel file with mappings between the different versions at:
+
+[Broad dump](http://fungalgenomes.org/public/neurospora/data/Broad_dump/Dump_2014_02.tar.gz)
+
+It also contains comments about the type of changes.
+
+Dumped all the tabs from the excel file as csv files:
+
+[dumped tab files]("./data/Neurospora_crassa_versions_geneid_mappings/")
+
+## Create individual mapping files for loading and easy reference
+
+### v1 mapping
+
+Only one pair old:new per row in the source file (merges and splits are unnested in the file)
+
+```{r, eval = FALSE}
+v1mappings <- read.table("./data/Neurospora_crassa_versions_geneid_mappings/v1-to-v7-Table 1.csv",
+                         quote = "", header = TRUE, strip.white = TRUE, sep = ",")
+
+# Filter only v1 and v7 IDs, and remove version from the current geneIDs (v7)
+v1mappings <- transmute(v1mappings, geneid = gsub("^(.+)\\.7","\\1", v1mappings$NC12_CALLGENES_FINAL_7,
+                            perl = TRUE), geneidv1 = I(v1mappings$NC3_FINAL_CALLGENES_1))
+
+# Remove added and deleted genes (no mappings)
+v1mappings <- filter(v1mappings, geneid != "")
+v1mappings <- filter(v1mappings, geneidv1 != "")
+
+# Dump mappings v7 to v1
+write.table(v1mappings, "./tidy/broad_nc_geneid_mappings_v1.tsv", row.names = FALSE, 
+            quote = FALSE, sep = "\t")
+```
+
+### v2 mapping
+
+Only one pair old:new per row in the source file (merges and splits are unnested in the file)
+
+```{r, eval = FALSE}
+v2mappings <- read.table("./data/Neurospora_crassa_versions_geneid_mappings/v2-to-v7-Table 1.csv",
+                         quote = "", header = TRUE, strip.white = TRUE, sep = ",", comment.char = "",
+                         row.names = NULL)
+
+# Filter only v2 and v7 IDs, and remove version from the current geneIDs (v7)
+v2mappings <- transmute(v2mappings, geneid = gsub("^(.+)\\.7","\\1", v2mappings$NEW_LOCUS,
+                                                  perl = TRUE), 
+                        geneidv2 = I(v2mappings$OLD_LOCUS))
+
+# Remove added and deleted genes (no mappings)
+v2mappings <- filter(v2mappings, geneid != "DELETE")
+v2mappings <- filter(v2mappings, geneid != "ADD") # geneids where in the wrong column anyway
+
+# Remove also "notmapped"... I guess they were deleted too (they are not in v7)
+v2mappings <- filter(v2mappings, geneid != "NOTMAPPED")
+
+write.table(v2mappings, "./tidy/broad_nc_geneid_mappings_v2.tsv", row.names = FALSE, 
+            quote = FALSE, sep = "\t")
+```
+
+### v3 mappings
+
+Only one pair old:new per row in the source file (merges and splits are unnested in the file)
+
+```{r, eval = FALSE}
+v3mappings <- read.table("./data/Neurospora_crassa_versions_geneid_mappings/v3-to-v7-Table 1.csv",
+                         quote = "", header = TRUE, strip.white = TRUE, sep = ",", comment.char = "",
+                         row.names = NULL)
+
+# Filter only v3 and v7 IDs, and remove version from the current geneIDs (v7)
+v3mappings <- transmute(v3mappings, geneid = gsub("^(.+)\\.7","\\1", v3mappings$NC12_CALLGENES_FINAL_7,
+                                                  perl = TRUE), 
+                        geneidv3 = I(v3mappings$NC7_FINAL_CALLGENES_3))
+
+# Remove added and deleted genes (no mappings)
+v3mappings <- filter(v3mappings, !(geneid == "" | geneidv3 == ""))
+
+write.table(v3mappings, "./tidy/broad_nc_geneid_mappings_v3.tsv", row.names = FALSE, 
+            quote = FALSE, sep = "\t")
+```
+
+### v4 mappings
+
+There are 2 files for v4 to v7 mappings in the Broad dump, using the latest (Jun vs Feb)
+
+Merges and split are nested in the source file, they will need unnesting.
+
+There is a split with the new gene loci "unconfirmed", but there is also a note in the current annotation confirming the split gene IDs
+
+```{r, eval = FALSE}
+v4mappings <- read.table("./data/Neurospora_crassa_versions_geneid_mappings/v4_jun-to-v7-Table 1.csv",
+                         quote = "", header = TRUE, strip.white = TRUE, sep = ",", comment.char = "",
+                         row.names = NULL, skip = 1)
+
+# Filter only v4 and v7 IDs, no version attached to the geneIDs
+v4mappings <- transmute(v4mappings, geneid = as.character(v4mappings$NC12_CALLGENES_FINAL_7_locus),
+                        geneidv4 = as.character(v4mappings$NC10_CALLGENES_FINAL_4_JUN_locus) )
+
+# Add missing split IDs
+v4mappings$geneid[which(v4mappings$geneidv4 == "NCU07571")] <- "NCU07571/NCU15832"
+
+# Remove added and deleted genes (no mappings)
+v4mappings <- filter(v4mappings, !(geneid == "" | geneidv4 == ""))
+
+# Unnest merges and splits
+
+v4mappings <- transmute(v4mappings, geneid = strsplit(as.character(geneid), '/'),
+                        geneidv4 = strsplit(as.character(geneidv4), '/') )
+
+v4mappings <- unnest(v4mappings, geneid, .drop = FALSE )
+v4mappings <- unnest(v4mappings, geneidv4, .drop = FALSE )
+
+# Add version tag to v4 gene IDs
+v4mappings$geneidv4 <- paste0(v4mappings$geneidv4,".4")
+
+# Write to file
+write.table(v4mappings, "./tidy/broad_nc_geneid_mappings_v4.tsv", row.names = FALSE, 
+            quote = FALSE, sep = "\t")
+```
+
+### v5 mappings
+
+v5 file looks like the file for v4 mappings, but it is not the same (checked). 
+
+Some gene IDs where reused between v4 and v5, careful with the mapping... you need to know the version to map some IDs (ex: NCU11858.4 is NCU00033, but NCU11858.5 is NCU16695)
+
+Merges and split are nested in the source file, they will need unnesting.
+
+There is a split with the new gene loci "unconfirmed", but there is also a note in the current annotation confirming the split gene IDs
+
+```{r, eval = FALSE}
+v5mappings <- read.table("./data/Neurospora_crassa_versions_geneid_mappings/v5-to-v7-Table 1.csv",
+                         quote = "", header = TRUE, strip.white = TRUE, sep = ",", comment.char = "",
+                         row.names = NULL, skip = 1)
+
+# Filter only v5 and v7 IDs, no version attached to the geneIDs
+v5mappings <- transmute(v5mappings, geneid = as.character(v5mappings$NC12_CALLGENES_FINAL_7_LOCUS_ID),
+                        geneidv5 = as.character(v5mappings$NC10_CALLGENES_FINAL_5_locus) )
+
+# Add missing split IDs
+v5mappings$geneid[which(v5mappings$geneidv5 == "NCU07571")] <- "NCU07571/NCU15832"
+
+# Remove added and deleted genes (no mappings)
+v5mappings <- filter(v5mappings, !(geneid == "" | geneidv5 == ""))
+
+# Unnest merges and splits
+
+v5mappings <- transmute(v5mappings, geneid = strsplit(as.character(geneid), '/'),
+                        geneidv5 = strsplit(as.character(geneidv5), '/') )
+
+v5mappings <- unnest(v5mappings, geneid, .drop = FALSE )
+v5mappings <- unnest(v5mappings, geneidv5, .drop = FALSE )
+
+# Add version tag to v5 gene IDs
+
+v5mappings$geneidv5 <- paste0(v5mappings$geneidv5,".5")
+
+# Write to file
+write.table(v5mappings, "./tidy/broad_nc_geneid_mappings_v5.tsv", row.names = FALSE, 
+            quote = FALSE, sep = "\t")
+
+# Compare v4 to v5 IDs (just checking if they are the same, they are not)
+mappingstest <- merge(v4mappings, v5mappings, by.x = "geneid", by.y = "geneid")
+```
+
+
+Create a combined file, with all the mappings, one column per version
+```{r, eval = FALSE}
+mappingall <- merge(v1mappings, v2mappings,  by.x = "geneid", by.y = "geneid", all = TRUE)
+mappingall <- merge(mappingall, v3mappings,  by.x = "geneid", by.y = "geneid", all = TRUE)
+mappingall <- merge(mappingall, v4mappings,  by.x = "geneid", by.y = "geneid", all = TRUE)
+mappingall <- merge(mappingall, v5mappings,  by.x = "geneid", by.y = "geneid", all = TRUE)
+
+# Write to file
+write.table(mappingall, "./tidy/broad_nc_geneid_mappings_all.tsv", row.names = FALSE, 
+            quote = FALSE, sep = "\t")
+```
+
+Create also a combined file, with all the mappings in the same column
+```{r, eval = FALSE}
+mappingone <- gather(mappingall, na.rm = TRUE, key = version, value = geneidv, geneidv1:geneidv5)
+# Get read of the version column
+mappingone <- mappingone[,-2]
+# Sort by gene ID
+mappingone <- mappingone[order(mappingone$geneid),]
+
+# Write to file
+write.table(mappingone, "./tidy/broad_nc_geneid_mappings_all_one_column.tsv", row.names = FALSE,
+            quote = FALSE, sep = "\t")
+```

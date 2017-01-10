@@ -1,0 +1,1656 @@
+geneid	pathwayid	pathwayname
+NCU08195	NCPWY:TRNA-CHARGING-PWY-1	TRNA-CHARGING-PWY-1
+NCU00409	NCPWY:PHESYN	phenylalanine biosynthesis I
+NCU00461	NCPWY:ALACAT2-PWY	alanine degradation II (to D-lactate)
+NCU00461	NCPWY:GLUTAMATE-DEG1-PWY	glutamate degradation I
+NCU00461	NCPWY:PWY-5675-1	PWY-5675-1
+NCU10359	NCPWY:PWY2T-23	PWY2T-23
+NCU10359	NCPWY:PWY3DJ-11470	sphingosine and sphingosine-1-phosphate metabolism
+NCU10359	NCPWY:SPHINGOLIPID-SYN-PWY	sphingolipid metabolism
+NCU03648	NCPWY:GLUTAMINDEG-PWY	glutamine degradation I
+NCU04202	NCPWY:PWY-5687	pyrimidine ribonucleotides interconversion
+NCU04202	NCPWY:PWY-6126-1	PWY-6126-1
+NCU04202	NCPWY:PWY0-163	salvage pathways of pyrimidine ribonucleotides
+NCU04202	NCPWY:PWY0-166	pyrimidine deoxyribonucleotides <i>de novo</i> biosynthesis
+NCU01692	NCPWY:FERMENTATION-PWY	mixed acid fermentation
+NCU01692	NCPWY:GLYOXYLATE-BYPASS	glyoxylate cycle
+NCU01692	NCPWY:PWY-5690	TCA cycle variation III (eukaryotic)
+NCU03861	NCPWY:GLUTAMINDEG-PWY	glutamine degradation I
+NCU03857	NCPWY:FERMENTATION-PWY	mixed acid fermentation
+NCU06625	NCPWY:CYSTEINE-DEG-PWY	L-cysteine degradation I
+NCU08035	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU08035	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU08035	NCPWY:PWY2T-2574	aerobic respiration
+NCU07659	NCPWY:PWY2T-1450	xylose fermentation
+NCU07659	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU07659	NCPWY:PYRUVDEHYD-PWY	acetyl-CoA biosynthesis (from pyruvate)
+NCU07610	NCPWY:PWY0-981	taurine degradation IV
+NCU06360	NCPWY:HISTSYN-PWY	histidine biosynthesis
+NCU07190	NCPWY:PWY-6788	PWY-6788
+NCU07190	NCPWY:PWY2T-42	PWY2T-42
+NCU07190	NCPWY:PWY2T-7	cellulose degradation
+NCU03929	NCPWY:FAO-PWY	fatty acid &beta;-oxidation I
+NCU03929	NCPWY:PWY-5136-1	PWY-5136-1
+NCU03929	NCPWY:PWY-5143	fatty acid activation
+NCU03929	NCPWY:PWY-5972	PWY-5972
+NCU03929	NCPWY:PWY2T-2575	PWY2T-2575
+NCU04725	NCPWY:GLUAMCAT-PWY	<i>N</i>-acetylglucosamine degradation
+NCU05121	NCPWY:PWY-6788	PWY-6788
+NCU05121	NCPWY:PWY2T-42	PWY2T-42
+NCU05121	NCPWY:PWY2T-7	cellulose degradation
+NCU07001	NCPWY:PWY-5344	homocysteine biosynthesis
+NCU07001	NCPWY:PWY2T-24	PWY2T-24
+NCU04352	NCPWY:PWY2T-19	PWY2T-19
+NCU06996	NCPWY:PWY-621-1	PWY-621-1
+NCU06996	NCPWY:PWY2T-19	PWY2T-19
+NCU01467	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU01467	NCPWY:PWY-4302	aerobic respiration -- electron donor III
+NCU01467	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU01467	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU01467	NCPWY:PWY2T-21	PWY2T-21
+NCU01467	NCPWY:PWY2T-2574	aerobic respiration
+NCU03813	NCPWY:P164-PWY	purine degradation III (anaerobic)
+NCU03813	NCPWY:PWY-1881	formate oxidation to CO<sub>2</sub>
+NCU03813	NCPWY:PWY-5497	purine degradation II (anaerobic)
+NCU04636	NCPWY:PWY0-1021	alanine biosynthesis III
+NCU10053	NCPWY:1CMET2-PWY	formylTHF biosynthesis I
+NCU10053	NCPWY:PWY-3841	formylTHF biosynthesis II
+NCU10053	NCPWY:PWY0-166	pyrimidine deoxyribonucleotides <i>de novo</i> biosynthesis
+NCU09041	NCPWY:PWY-5515	L-arabinose degradation II
+NCU02127	NCPWY:LEU-DEG2-PWY	leucine degradation I
+NCU09810	NCPWY:PWY-5690	TCA cycle variation III (eukaryotic)
+NCU00920	NCPWY:TRNA-CHARGING-PWY-1	TRNA-CHARGING-PWY-1
+NCU10058	NCPWY:GLUCOSE1PMETAB-PWY	glucose and glucose-1-phosphate degradation
+NCU10058	NCPWY:GLYCOCAT-PWY	glycogen degradation I
+NCU10058	NCPWY:PWY-5661	GDP-glucose biosynthesis
+NCU10058	NCPWY:PWY-5941	glycogen degradation II
+NCU10058	NCPWY:PWY-5941-1	PWY-5941-1
+NCU10058	NCPWY:PWY-621-1	PWY-621-1
+NCU10058	NCPWY:PWY2T-19	PWY2T-19
+NCU01870	NCPWY:GLUCONEO-PWY	gluconeogenesis I
+NCU01870	NCPWY:GLYCOLYSIS-1	glycolysis I
+NCU01870	NCPWY:PWY-5484	glycolysis II
+NCU01870	NCPWY:PWY2T-1450	xylose fermentation
+NCU02712	NCPWY:FERMENTATION-PWY	mixed acid fermentation
+NCU02712	NCPWY:P163-PWY	P163-PWY
+NCU02712	NCPWY:P164-PWY	purine degradation III (anaerobic)
+NCU02712	NCPWY:PWY-5497	purine degradation II (anaerobic)
+NCU00893	NCPWY:PWY-2161	folate polyglutamylation I
+NCU01985	NCPWY:PWY-5340	sulfate activation for sulfonation
+NCU00536	NCPWY:PWY-5344	homocysteine biosynthesis
+NCU00536	NCPWY:PWY2T-24	PWY2T-24
+NCU03404	NCPWY:PWY3O-17	PWY3O-17
+NCU03404	NCPWY:THISYNARA-PWY	THISYNARA-PWY
+NCU07887	NCPWY:PWY-6126-1	PWY-6126-1
+NCU07887	NCPWY:PWY0-166	pyrimidine deoxyribonucleotides <i>de novo</i> biosynthesis
+NCU03771	NCPWY:PWY-5667	CDP-diacylglycerol biosynthesis I
+NCU05683	NCPWY:VALSYN-PWY	valine biosynthesis
+NCU00173	NCPWY:PWY-1801	formaldehyde oxidation II (glutathione-dependent)
+NCU07741	NCPWY:PWY-5667	CDP-diacylglycerol biosynthesis I
+NCU07741	NCPWY:TRIGLSYN-PWY	triacylglycerol biosynthesis
+NCU03756	NCPWY:PHESYN	phenylalanine biosynthesis I
+NCU03756	NCPWY:PWY-5031	PWY-5031
+NCU03756	NCPWY:PWY-5079	phenylalanine degradation III
+NCU03756	NCPWY:PWY-5081	tryptophan degradation VIII (to tryptophol)
+NCU03756	NCPWY:PWY-5082	methionine degradation III
+NCU03756	NCPWY:PWY-5886	4-hydroxyphenylpyruvate biosynthesis
+NCU03756	NCPWY:PWY3O-4108-1	PWY3O-4108-1
+NCU03756	NCPWY:TYRFUMCAT-PWY	tyrosine degradation I
+NCU03756	NCPWY:TYRSYN-1	TYRSYN-1
+NCU07807	NCPWY:GLUCONEO-PWY	gluconeogenesis I
+NCU07807	NCPWY:GLYCOLYSIS-1	glycolysis I
+NCU07807	NCPWY:PWY-5484	glycolysis II
+NCU07807	NCPWY:PWY2T-1450	xylose fermentation
+NCU08180	NCPWY:PWY2T-7	cellulose degradation
+NCU11424	NCPWY:PWY-6681	PWY-6681
+NCU06861	NCPWY:PWY2T-10	xylan degradation
+NCU05851	NCPWY:PWY-5754	4-hydroxybenzoate biosynthesis I (eukaryotes)
+NCU06017	NCPWY:PWY-5350	thiosulfate disproportionation III (rhodanese)
+NCU06017	NCPWY:SO4ASSIM-PWY-1	SO4ASSIM-PWY-1
+NCU06871	NCPWY:PWY2T-19	PWY2T-19
+NCU02282	NCPWY:PWY2T-23	PWY2T-23
+NCU02282	NCPWY:SPHINGOLIPID-SYN-PWY	sphingolipid metabolism
+NCU07451	NCPWY:TRNA-CHARGING-PWY-1	TRNA-CHARGING-PWY-1
+NCU02583	NCPWY:GLYCOCAT-PWY	glycogen degradation I
+NCU02126	NCPWY:LEU-DEG2-PWY	leucine degradation I
+NCU02829	NCPWY:PWY-5659	GDP-mannose biosynthesis
+NCU02109	NCPWY:UDPNACETYLGALSYN-PWY	UDP-<i>N</i>-acetyl-D-glucosamine biosynthesis II
+NCU01550	NCPWY:PWY-6126-1	PWY-6126-1
+NCU04815	NCPWY:PWY-5386	methylglyoxal degradation I
+NCU05118	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU05118	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU05118	NCPWY:PWY2T-2574	aerobic respiration
+NCU03973	NCPWY:ALACAT2-PWY	alanine degradation II (to D-lactate)
+NCU03973	NCPWY:ALANINE-DEG3-PWY	ALANINE-DEG3-PWY
+NCU03973	NCPWY:ALANINE-SYN2-PWY	alanine biosynthesis II
+NCU08643	NCPWY:PWY3O-17	PWY3O-17
+NCU08643	NCPWY:THISYNARA-PWY	THISYNARA-PWY
+NCU08927	NCPWY:PWY3DJ-12	PWY3DJ-12
+NCU16917	NCPWY:PWY-5963	molybdenum cofactor (sulfide) biosynthesis
+NCU07165	NCPWY:MANNCAT-PWY	D-mannose degradation
+NCU07165	NCPWY:PWY-5659	GDP-mannose biosynthesis
+NCU03651	NCPWY:GLUCONEO-PWY	gluconeogenesis I
+NCU08940	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU08940	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU08940	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU08940	NCPWY:PWY2T-21	PWY2T-21
+NCU08940	NCPWY:PWY2T-2574	aerobic respiration
+NCU07836	NCPWY:PANTO-PWY	pantothenate biosynthesis I
+NCU00463	NCPWY:PWY-5651	tryptophan degradation to 2-amino-3-carboxymuconate semialdehyde
+NCU00463	NCPWY:PWY-6309	tryptophan degradation XI (mammalian, via kynurenine)
+NCU01333	NCPWY:PWY-6075	ergosterol biosynthesis
+NCU08535	NCPWY:PWY0-1264	biotin-carboxyl carrier protein
+NCU09715	NCPWY:TRESYN-PWY	trehalose biosynthesis I
+NCU02226	NCPWY:PWY-4361	PWY-4361
+NCU00677	NCPWY:PWY0-321	phenylacetate degradation I (aerobic)
+NCU01867	NCPWY:PWY-6788	PWY-6788
+NCU01867	NCPWY:PWY2T-42	PWY2T-42
+NCU01867	NCPWY:PWY2T-7	cellulose degradation
+NCU01993	NCPWY:PWY-3561	choline biosynthesis III
+NCU01993	NCPWY:PWY3O-450	phosphatidylcholine biosynthesis I
+NCU00959	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU00959	NCPWY:PWY-4302	aerobic respiration -- electron donor III
+NCU00959	NCPWY:PWY-561	superpathway of glyoxylate cycle
+NCU00959	NCPWY:PWY-5690	TCA cycle variation III (eukaryotic)
+NCU00643	NCPWY:PWY-4101	sorbitol degradation I
+NCU00643	NCPWY:PWY-5515	L-arabinose degradation II
+NCU03010	NCPWY:LYSINE-AMINOAD-PWY	lysine biosynthesis IV
+NCU03010	NCPWY:LYSINE-DEG1-PWY	LYSINE-DEG1-PWY
+NCU03010	NCPWY:PWY-5283	PWY-5283
+NCU03010	NCPWY:PWY-5298	PWY-5298
+NCU03010	NCPWY:PWY-5314	PWY-5314
+NCU03010	NCPWY:PWY-5324	PWY-5324
+NCU00761	NCPWY:LIPAS-PWY-1	LIPAS-PWY-1
+NCU01859	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU01859	NCPWY:PWY-4302	aerobic respiration -- electron donor III
+NCU01859	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU01859	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU01859	NCPWY:PWY2T-21	PWY2T-21
+NCU01859	NCPWY:PWY2T-2574	aerobic respiration
+NCU08114	NCPWY:PWY2T-42	PWY2T-42
+NCU02771	NCPWY:HEME-BIOSYNTHESIS-II	heme biosynthesis from uroporphyrinogen-III I
+NCU08216	NCPWY:HOMOCYSDEGR-PWY	HOMOCYSDEGR-PWY
+NCU08216	NCPWY:PWY-801	homocysteine and cysteine interconversion
+NCU08216	NCPWY:PWY2T-24	PWY2T-24
+NCU08162	NCPWY:ARGSYNBSUB-PWY-1	ARGSYNBSUB-PWY-1
+NCU00447	NCPWY:PWY2T-23	PWY2T-23
+NCU00447	NCPWY:PWY3DJ-12	PWY3DJ-12
+NCU00447	NCPWY:SPHINGOLIPID-SYN-PWY	sphingolipid metabolism
+NCU08976	NCPWY:PWY2T-27	PWY2T-27
+NCU05853	NCPWY:PWY2T-10	xylan degradation
+NCU01816	NCPWY:PWY-5697	allantoin degradation to ureidoglycolate I (urea producing)
+NCU03777	NCPWY:VALDEG-PWY	valine degradation I
+NCU02472	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU02472	NCPWY:PWY-4302	aerobic respiration -- electron donor III
+NCU02472	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU02472	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU02472	NCPWY:PWY2T-21	PWY2T-21
+NCU02472	NCPWY:PWY2T-2574	aerobic respiration
+NCU04442	NCPWY:PWY-6317	PWY-6317
+NCU09497	NCPWY:PWY2T-2575	PWY2T-2575
+NCU09497	NCPWY:PWY2T-2576	PWY2T-2576
+NCU02240	NCPWY:PWY-6788	PWY-6788
+NCU02240	NCPWY:PWY2T-42	PWY2T-42
+NCU02240	NCPWY:PWY2T-7	cellulose degradation
+NCU10021	NCPWY:PWY2T-42	PWY2T-42
+NCU00792	NCPWY:LEU-DEG2-PWY	leucine degradation I
+NCU00792	NCPWY:LEUSYN-PWY	leucine biosynthesis
+NCU00792	NCPWY:PWY-5057	valine degradation II
+NCU00792	NCPWY:PWY-5076	leucine degradation III
+NCU00792	NCPWY:VALDEG-PWY	valine degradation I
+NCU00792	NCPWY:VALSYN-PWY	valine biosynthesis
+NCU01606	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU01606	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU01606	NCPWY:PWY2T-2574	aerobic respiration
+NCU03488	NCPWY:PWY-5686	uridine-5'-phosphate biosynthesis
+NCU05188	NCPWY:PWY-5418	phenol degradation I (aerobic)
+NCU05259	NCPWY:PWY-5366	palmitoleate biosynthesis II
+NCU05259	NCPWY:PWY-5996	oleate biosynthesis II (animals)
+NCU07919	NCPWY:PWY-5426	betaxanthin biosynthesis
+NCU05268	NCPWY:PWY2T-19	PWY2T-19
+NCU05689	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU05689	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU05689	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU05689	NCPWY:PWY2T-21	PWY2T-21
+NCU05689	NCPWY:PWY2T-2574	aerobic respiration
+NCU06512	NCPWY:HSERMETANA-PWY	HSERMETANA-PWY
+NCU06512	NCPWY:PWY-5041	<i>S</i>-adenosyl-L-methionine cycle II
+NCU06512	NCPWY:PWY-6151	<i>S</i>-adenosyl-L-methionine cycle I
+NCU06512	NCPWY:PWY2T-24	PWY2T-24
+NCU02438	NCPWY:PWY-5084	2-ketoglutarate dehydrogenase complex
+NCU02438	NCPWY:PWY-5690	TCA cycle variation III (eukaryotic)
+NCU06870	NCPWY:PWY2T-23	PWY2T-23
+NCU06870	NCPWY:PWY3DJ-12	PWY3DJ-12
+NCU06870	NCPWY:SPHINGOLIPID-SYN-PWY	sphingolipid metabolism
+NCU07446	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU07446	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU07446	NCPWY:PWY2T-2574	aerobic respiration
+NCU05985	NCPWY:PWY-5667	CDP-diacylglycerol biosynthesis I
+NCU05985	NCPWY:TRIGLSYN-PWY	triacylglycerol biosynthesis
+NCU01050	NCPWY:PWY-6788	PWY-6788
+NCU01050	NCPWY:PWY2T-42	PWY2T-42
+NCU01050	NCPWY:PWY2T-7	cellulose degradation
+NCU03802	NCPWY:PWY-6100	L-carnitine biosynthesis
+NCU08336	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU08336	NCPWY:PWY-4302	aerobic respiration -- electron donor III
+NCU08336	NCPWY:PWY-561	superpathway of glyoxylate cycle
+NCU08336	NCPWY:PWY-5690	TCA cycle variation III (eukaryotic)
+NCU03031	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU03031	NCPWY:PWY-4302	aerobic respiration -- electron donor III
+NCU03031	NCPWY:PWY-561	superpathway of glyoxylate cycle
+NCU03031	NCPWY:PWY-5690	TCA cycle variation III (eukaryotic)
+NCU05404	NCPWY:PWY-6788	PWY-6788
+NCU05404	NCPWY:PWY2T-42	PWY2T-42
+NCU05404	NCPWY:PWY2T-7	cellulose degradation
+NCU03768	NCPWY:ASPARAGINE-DEG1-PWY	asparagine degradation I
+NCU01065	NCPWY:PWY-5986	ammonium transport
+NCU05956	NCPWY:BGALACT-PWY	lactose degradation III
+NCU07926	NCPWY:TRNA-CHARGING-PWY-1	TRNA-CHARGING-PWY-1
+NCU01157	NCPWY:GLUTATHIONESYN-PWY	glutathione biosynthesis
+NCU02227	NCPWY:ARGSYNBSUB-PWY-1	ARGSYNBSUB-PWY-1
+NCU02227	NCPWY:GLUTORN-PWY	ornithine biosynthesis
+NCU05843	NCPWY:PWY-5986	ammonium transport
+NCU05700	NCPWY:PWY-5656	mannosylglycerate biosynthesis I
+NCU08227	NCPWY:PWY-6788	PWY-6788
+NCU08227	NCPWY:PWY2T-42	PWY2T-42
+NCU08227	NCPWY:PWY2T-7	cellulose degradation
+NCU00985	NCPWY:BGALACT-PWY	lactose degradation III
+NCU03544	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU03544	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU03544	NCPWY:PWY2T-2574	aerobic respiration
+NCU06187	NCPWY:PWY-6124	inosine-5'-phosphate biosynthesis II
+NCU06187	NCPWY:PWY-6126-1	PWY-6126-1
+NCU06187	NCPWY:PWY-841	purine nucleotides <i>de novo</i> biosynthesis II
+NCU03243	NCPWY:LIPASYN-PWY	phospholipases
+NCU07281	NCPWY:ANAEROFRUCAT-PWY	homolactic fermentation
+NCU07281	NCPWY:GLUCONEO-PWY	gluconeogenesis I
+NCU07281	NCPWY:GLYCOLYSIS-1	glycolysis I
+NCU07281	NCPWY:PENTOSE-P-PWY-1	pentose phosphate pathway
+NCU07281	NCPWY:PWY-5659	GDP-mannose biosynthesis
+NCU07281	NCPWY:PWY-621-1	PWY-621-1
+NCU07281	NCPWY:PWY2T-19	PWY2T-19
+NCU00302	NCPWY:PWY2T-23	PWY2T-23
+NCU00302	NCPWY:PWY3DJ-12	PWY3DJ-12
+NCU00302	NCPWY:SPHINGOLIPID-SYN-PWY	sphingolipid metabolism
+NCU03559	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU03559	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU03559	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU03559	NCPWY:PWY2T-21	PWY2T-21
+NCU03559	NCPWY:PWY2T-2574	aerobic respiration
+NCU05548	NCPWY:ARO-PWY	chorismate biosynthesis I
+NCU05548	NCPWY:PWY-6164	3-dehydroquinate biosynthesis I
+NCU04720	NCPWY:PWY-5675-1	PWY-5675-1
+NCU04720	NCPWY:PWY-723	2-nitropropane degradation
+NCU08877	NCPWY:1CMET2-PWY	formylTHF biosynthesis I
+NCU08877	NCPWY:PWY-2201	folate transformations
+NCU08877	NCPWY:PWY-3841	formylTHF biosynthesis II
+NCU08877	NCPWY:PWY2T-24	PWY2T-24
+NCU01446	NCPWY:PWY0-163	salvage pathways of pyrimidine ribonucleotides
+NCU02397	NCPWY:PWY-5057	valine degradation II
+NCU02397	NCPWY:PWY-5076	leucine degradation III
+NCU02397	NCPWY:PWY-5078	isoleucine degradation II
+NCU02397	NCPWY:PWY-5079	phenylalanine degradation III
+NCU02397	NCPWY:PWY-5081	tryptophan degradation VIII (to tryptophol)
+NCU02397	NCPWY:PWY-5082	methionine degradation III
+NCU02397	NCPWY:PWY-5486	pyruvate fermentation to ethanol II
+NCU02397	NCPWY:PWY-5768	pyruvate fermentation to acetate VIII
+NCU02397	NCPWY:PWY2T-11	xylose conversion to ethanol
+NCU02397	NCPWY:PWY2T-1450	xylose fermentation
+NCU02397	NCPWY:PWY2T-9	cellulose conversion to ethanol
+NCU02397	NCPWY:PWY3O-4108-1	PWY3O-4108-1
+NCU06023	NCPWY:ARO-PWY	chorismate biosynthesis I
+NCU06023	NCPWY:PWY-6416	quinate degradation II
+NCU01546	NCPWY:HEME-BIOSYNTHESIS-II	heme biosynthesis from uroporphyrinogen-III I
+NCU01512	NCPWY:TRNA-CHARGING-PWY-1	TRNA-CHARGING-PWY-1
+NCU04380	NCPWY:FAO-PWY	fatty acid &beta;-oxidation I
+NCU04380	NCPWY:PWY-5136-1	PWY-5136-1
+NCU04380	NCPWY:PWY-5143	fatty acid activation
+NCU04380	NCPWY:PWY-5972	PWY-5972
+NCU04380	NCPWY:PWY2T-2575	PWY2T-2575
+NCU04380	NCPWY:PWY2T-2576	PWY2T-2576
+NCU08291	NCPWY:HEME-BIOSYNTHESIS-II	heme biosynthesis from uroporphyrinogen-III I
+NCU02269	NCPWY:PWY-6111-1	PWY-6111-1
+NCU09299	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU09299	NCPWY:PWY-4302	aerobic respiration -- electron donor III
+NCU09299	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU09299	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU09299	NCPWY:PWY2T-21	PWY2T-21
+NCU09299	NCPWY:PWY2T-2574	aerobic respiration
+NCU02479	NCPWY:GLNSYN-PWY	glutamine biosynthesis I
+NCU02479	NCPWY:PWY-5675-1	PWY-5675-1
+NCU00636	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU00636	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU00636	NCPWY:PWY2T-2574	aerobic respiration
+NCU03076	NCPWY:PROUT-PWY	proline degradation I
+NCU07366	NCPWY:UDPNACETYLGALSYN-PWY	UDP-<i>N</i>-acetyl-D-glucosamine biosynthesis II
+NCU03004	NCPWY:PWY2T-1450	xylose fermentation
+NCU03004	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU03004	NCPWY:PYRUVDEHYD-PWY	acetyl-CoA biosynthesis (from pyruvate)
+NCU08746	NCPWY:PWY-5767	glycogen degradation III
+NCU03953	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU03953	NCPWY:PWY-4302	aerobic respiration -- electron donor III
+NCU03953	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU03953	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU03953	NCPWY:PWY2T-21	PWY2T-21
+NCU03953	NCPWY:PWY2T-2574	aerobic respiration
+NCU08671	NCPWY:PWY-922	mevalonate pathway I
+NCU06550	NCPWY:PWY-6466	PWY-6466
+NCU05298	NCPWY:PWY-5675-1	PWY-5675-1
+NCU02476	NCPWY:FERMENTATION-PWY	mixed acid fermentation
+NCU02476	NCPWY:PWY-5057	valine degradation II
+NCU02476	NCPWY:PWY-5076	leucine degradation III
+NCU02476	NCPWY:PWY-5078	isoleucine degradation II
+NCU02476	NCPWY:PWY-5079	phenylalanine degradation III
+NCU02476	NCPWY:PWY-5081	tryptophan degradation VIII (to tryptophol)
+NCU02476	NCPWY:PWY-5082	methionine degradation III
+NCU02476	NCPWY:PWY-5486	pyruvate fermentation to ethanol II
+NCU02476	NCPWY:PWY2T-11	xylose conversion to ethanol
+NCU02476	NCPWY:PWY2T-1450	xylose fermentation
+NCU02476	NCPWY:PWY2T-9	cellulose conversion to ethanol
+NCU02476	NCPWY:PWY3O-4108-1	PWY3O-4108-1
+NCU02476	NCPWY:PWY66-21	oxidative ethanol degradation I
+NCU02936	NCPWY:PROUT-PWY	proline degradation I
+NCU02468	NCPWY:PWY2T-23	PWY2T-23
+NCU05516	NCPWY:PWY0-1264	biotin-carboxyl carrier protein
+NCU02395	NCPWY:PWY-5189	tetrapyrrole biosynthesis II
+NCU01484	NCPWY:PWY2T-19	PWY2T-19
+NCU03575	NCPWY:TRNA-CHARGING-PWY-1	TRNA-CHARGING-PWY-1
+NCU09199	NCPWY:PWY-5404	betaxanthin biosynthesis (via dopaxanthin)
+NCU00776	NCPWY:PWY-5404	betaxanthin biosynthesis (via dopaxanthin)
+NCU00776	NCPWY:PWY-5439	betacyanin biosynthesis (via dopamine)
+NCU02677	NCPWY:ARGSYNBSUB-PWY-1	ARGSYNBSUB-PWY-1
+NCU02677	NCPWY:PWY-5686	uridine-5'-phosphate biosynthesis
+NCU07974	NCPWY:PWY-6788	PWY-6788
+NCU07974	NCPWY:PWY2T-42	PWY2T-42
+NCU07974	NCPWY:PWY2T-7	cellulose degradation
+NCU08762	NCPWY:PWY-6074	zymosterol biosynthesis
+NCU00106	NCPWY:PROSYN-PWY	proline biosynthesis I
+NCU00709	NCPWY:PWY2T-10	xylan degradation
+NCU00680	NCPWY:PWY0-42	2-methylcitrate cycle I
+NCU01786	NCPWY:PWY0-662	PRPP biosynthesis I
+NCU01443	NCPWY:TRNA-CHARGING-PWY-1	TRNA-CHARGING-PWY-1
+NCU04230	NCPWY:GLYOXYLATE-BYPASS	glyoxylate cycle
+NCU01103	NCPWY:CYANCAT-PWY	cyanate degradation
+NCU00227	NCPWY:PWY-5986	ammonium transport
+NCU00130	NCPWY:PWY-4441	DIMBOA-glucoside degradation
+NCU00130	NCPWY:PWY2T-42	PWY2T-42
+NCU04387	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU04387	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU04387	NCPWY:PWY2T-2574	aerobic respiration
+NCU01195	NCPWY:GLUTSYNIII-PWY	glutamate biosynthesis III
+NCU01195	NCPWY:PWY-5675-1	PWY-5675-1
+NCU06112	NCPWY:GLUDEG-I-PWY	GLUDEG-I-PWY
+NCU01517	NCPWY:PWY-5767	glycogen degradation III
+NCU06761	NCPWY:PWY2T-23	PWY2T-23
+NCU06761	NCPWY:PWY3DJ-11470	sphingosine and sphingosine-1-phosphate metabolism
+NCU06761	NCPWY:SPHINGOLIPID-SYN-PWY	sphingolipid metabolism
+NCU01633	NCPWY:PWY2T-42	PWY2T-42
+NCU01633	NCPWY:PWY2T-7	cellulose degradation
+NCU02624	NCPWY:PWY-6074	zymosterol biosynthesis
+NCU00567	NCPWY:ARGSYNBSUB-PWY-1	ARGSYNBSUB-PWY-1
+NCU00567	NCPWY:GLUTORN-PWY	ornithine biosynthesis
+NCU01905	NCPWY:PWY-4101	sorbitol degradation I
+NCU02786	NCPWY:PWY-6317	PWY-6317
+NCU05429	NCPWY:PWY-5067	glycogen biosynthesis II (from UDP-D-Glucose)
+NCU06353	NCPWY:PWY-2201	folate transformations
+NCU06353	NCPWY:PWY-3841	formylTHF biosynthesis II
+NCU01175	NCPWY:PWY-5122	geranyldiphosphate biosynthesis
+NCU01175	NCPWY:PWY-5123	<i>trans,trans</i>-farnesyl diphosphate biosynthesis
+NCU07156	NCPWY:HISTSYN-PWY	histidine biosynthesis
+NCU04623	NCPWY:BGALACT-PWY	lactose degradation III
+NCU01119	NCPWY:PWY-6132	lanosterol biosynthesis
+NCU01449	NCPWY:PWY-6168	flavin biosynthesis III (eukaryotes)
+NCU02665	NCPWY:PWY-5885	wax esters biosynthesis II
+NCU02665	NCPWY:TRIGLSYN-PWY	triacylglycerol biosynthesis
+NCU02566	NCPWY:TRNA-CHARGING-PWY-1	TRNA-CHARGING-PWY-1
+NCU07585	NCPWY:PWY-5194	siroheme biosynthesis
+NCU06386	NCPWY:MANNOSYL-CHITO-DOLICHOL-BIOSYNTHESIS	dolichyl-diphosphooligosaccharide biosynthesis
+NCU09649	NCPWY:PWY3O-17	PWY3O-17
+NCU09649	NCPWY:THISYNARA-PWY	THISYNARA-PWY
+NCU08341	NCPWY:PWY-6137	copper transport II
+NCU03957	NCPWY:PWY-5872	ubiquinone-10 biosynthesis (eukaryotic)
+NCU03957	NCPWY:PWY3O-19	ubiquinone-6 biosynthesis (eukaryotic)
+NCU09789	NCPWY:PWY-6126-1	PWY-6126-1
+NCU09789	NCPWY:PWY-841	purine nucleotides <i>de novo</i> biosynthesis II
+NCU06694	NCPWY:PWY2T-27	PWY2T-27
+NCU01258	NCPWY:CYANCAT-PWY	cyanate degradation
+NCU04579	NCPWY:ILEUSYN-PWY	isoleucine biosynthesis I (from threonine)
+NCU04579	NCPWY:VALSYN-PWY	valine biosynthesis
+NCU08133	NCPWY:CYANCAT-PWY	cyanate degradation
+NCU00836	NCPWY:PWY-6788	PWY-6788
+NCU00836	NCPWY:PWY2T-42	PWY2T-42
+NCU00836	NCPWY:PWY2T-7	cellulose degradation
+NCU00801	NCPWY:PWY2T-42	PWY2T-42
+NCU08661	NCPWY:PANTO-PWY	pantothenate biosynthesis I
+NCU05224	NCPWY:PWY0-163	salvage pathways of pyrimidine ribonucleotides
+NCU07965	NCPWY:MANNOSYL-CHITO-DOLICHOL-BIOSYNTHESIS	dolichyl-diphosphooligosaccharide biosynthesis
+NCU10397	NCPWY:PWY-6352	3-phosphoinositide biosynthesis
+NCU00008	NCPWY:PWY2T-23	PWY2T-23
+NCU00008	NCPWY:SPHINGOLIPID-SYN-PWY	sphingolipid metabolism
+NCU10893	NCPWY:PWY0-166	pyrimidine deoxyribonucleotides <i>de novo</i> biosynthesis
+NCU02812	NCPWY:PWY-5687	pyrimidine ribonucleotides interconversion
+NCU02812	NCPWY:PWY-6126-1	PWY-6126-1
+NCU01300	NCPWY:HISTSYN-PWY	histidine biosynthesis
+NCU06063	NCPWY:FAO-PWY	fatty acid &beta;-oxidation I
+NCU06063	NCPWY:PWY-5136-1	PWY-5136-1
+NCU06063	NCPWY:PWY-5143	fatty acid activation
+NCU06063	NCPWY:PWY-5972	PWY-5972
+NCU06063	NCPWY:PWY2T-2575	PWY2T-2575
+NCU06063	NCPWY:PWY2T-2576	PWY2T-2576
+NCU00896	NCPWY:PWY-6352	3-phosphoinositide biosynthesis
+NCU00484	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU00484	NCPWY:PWY-4302	aerobic respiration -- electron donor III
+NCU00484	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU00484	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU00484	NCPWY:PWY2T-21	PWY2T-21
+NCU00484	NCPWY:PWY2T-2574	aerobic respiration
+NCU08755	NCPWY:PWY-6788	PWY-6788
+NCU08755	NCPWY:PWY2T-42	PWY2T-42
+NCU08755	NCPWY:PWY2T-7	cellulose degradation
+NCU09862	NCPWY:PWY3O-19	ubiquinone-6 biosynthesis (eukaryotic)
+NCU01162	NCPWY:PWY-6788	PWY-6788
+NCU01162	NCPWY:PWY2T-42	PWY2T-42
+NCU01162	NCPWY:PWY2T-7	cellulose degradation
+NCU02450	NCPWY:ILEUSYN-PWY	isoleucine biosynthesis I (from threonine)
+NCU02450	NCPWY:PWY-6196	serine racemization
+NCU02373	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU02373	NCPWY:PWY-4302	aerobic respiration -- electron donor III
+NCU02373	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU02373	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU02373	NCPWY:PWY2T-21	PWY2T-21
+NCU02373	NCPWY:PWY2T-2574	aerobic respiration
+NCU01371	NCPWY:PWY-5269	cardiolipin biosynthesis II
+NCU01371	NCPWY:PWY4FS-8	phosphatidylglycerol biosynthesis II
+NCU07483	NCPWY:OXIDATIVEPENT-PWY	OXIDATIVEPENT-PWY
+NCU07483	NCPWY:OXIDATIVEPENT-PWY-1	pentose phosphate pathway (oxidative branch)
+NCU03170	NCPWY:PWY-5354	molybdenum cofactor biosynthesis
+NCU00915	NCPWY:TRNA-CHARGING-PWY-1	TRNA-CHARGING-PWY-1
+NCU00667	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU00667	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU00667	NCPWY:PWY2T-2574	aerobic respiration
+NCU08441	NCPWY:PWY-5972	PWY-5972
+NCU07811	NCPWY:PWY-6126-1	PWY-6126-1
+NCU03670	NCPWY:LIPASYN-PWY	phospholipases
+NCU10007	NCPWY:GLYOXYLATE-BYPASS	glyoxylate cycle
+NCU03156	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU03156	NCPWY:PWY-4302	aerobic respiration -- electron donor III
+NCU03156	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU03156	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU03156	NCPWY:PWY2T-21	PWY2T-21
+NCU03156	NCPWY:PWY2T-2574	aerobic respiration
+NCU10762	NCPWY:MANNOSYL-CHITO-DOLICHOL-BIOSYNTHESIS	dolichyl-diphosphooligosaccharide biosynthesis
+NCU00498	NCPWY:PWY-5354	molybdenum cofactor biosynthesis
+NCU04008	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU04008	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU04008	NCPWY:PWY2T-2574	aerobic respiration
+NCU03611	NCPWY:PWY2T-19	PWY2T-19
+NCU09680	NCPWY:PWY-6788	PWY-6788
+NCU09680	NCPWY:PWY2T-42	PWY2T-42
+NCU09680	NCPWY:PWY2T-7	cellulose degradation
+NCU01332	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU01332	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU01332	NCPWY:PWY2T-2574	aerobic respiration
+NCU07849	NCPWY:PWY-5194	siroheme biosynthesis
+NCU07849	NCPWY:PWY3O-17	PWY3O-17
+NCU07849	NCPWY:THISYNARA-PWY	THISYNARA-PWY
+NCU06261	NCPWY:PWY0-163	salvage pathways of pyrimidine ribonucleotides
+NCU06652	NCPWY:FERMENTATION-PWY	mixed acid fermentation
+NCU06652	NCPWY:PWY-1801	formaldehyde oxidation II (glutathione-dependent)
+NCU06652	NCPWY:PWY-5057	valine degradation II
+NCU06652	NCPWY:PWY-5076	leucine degradation III
+NCU06652	NCPWY:PWY-5078	isoleucine degradation II
+NCU06652	NCPWY:PWY-5079	phenylalanine degradation III
+NCU06652	NCPWY:PWY-5081	tryptophan degradation VIII (to tryptophol)
+NCU06652	NCPWY:PWY-5082	methionine degradation III
+NCU06652	NCPWY:PWY-5486	pyruvate fermentation to ethanol II
+NCU06652	NCPWY:PWY2T-11	xylose conversion to ethanol
+NCU06652	NCPWY:PWY2T-1450	xylose fermentation
+NCU06652	NCPWY:PWY2T-9	cellulose conversion to ethanol
+NCU06652	NCPWY:PWY3O-4108-1	PWY3O-4108-1
+NCU06652	NCPWY:PWY66-21	oxidative ethanol degradation I
+NCU06914	NCPWY:TRNA-CHARGING-PWY-1	TRNA-CHARGING-PWY-1
+NCU02193	NCPWY:PWY-5057	valine degradation II
+NCU02193	NCPWY:PWY-5076	leucine degradation III
+NCU02193	NCPWY:PWY-5078	isoleucine degradation II
+NCU02193	NCPWY:PWY-5079	phenylalanine degradation III
+NCU02193	NCPWY:PWY-5486	pyruvate fermentation to ethanol II
+NCU02193	NCPWY:PWY-5768	pyruvate fermentation to acetate VIII
+NCU02193	NCPWY:PWY2T-11	xylose conversion to ethanol
+NCU02193	NCPWY:PWY2T-1450	xylose fermentation
+NCU02193	NCPWY:PWY2T-9	cellulose conversion to ethanol
+NCU02193	NCPWY:PWY3O-4108-1	PWY3O-4108-1
+NCU02542	NCPWY:PWY-621-1	PWY-621-1
+NCU02542	NCPWY:PWY2T-19	PWY2T-19
+NCU03347	NCPWY:PWY-5651	tryptophan degradation to 2-amino-3-carboxymuconate semialdehyde
+NCU03347	NCPWY:PWY-6309	tryptophan degradation XI (mammalian, via kynurenine)
+NCU08189	NCPWY:PWY2T-10	xylan degradation
+NCU02005	NCPWY:SO4ASSIM-PWY	sulfate reduction I (assimilatory)
+NCU02005	NCPWY:SO4ASSIM-PWY-1	SO4ASSIM-PWY-1
+NCU00916	NCPWY:PWY-5986	ammonium transport
+NCU06931	NCPWY:PWY-5326	sulfite oxidation IV
+NCU03254	NCPWY:PWY-6788	PWY-6788
+NCU03254	NCPWY:PWY2T-42	PWY2T-42
+NCU03254	NCPWY:PWY2T-7	cellulose degradation
+NCU04899	NCPWY:FERMENTATION-PWY	mixed acid fermentation
+NCU04899	NCPWY:GLUCONEO-PWY	gluconeogenesis I
+NCU04899	NCPWY:GLYOXYLATE-BYPASS	glyoxylate cycle
+NCU04899	NCPWY:MALATE-ASPARTATE-SHUTTLE-PWY	aspartate degradation II
+NCU04899	NCPWY:PWY-5690	TCA cycle variation III (eukaryotic)
+NCU06194	NCPWY:PWY-5667	CDP-diacylglycerol biosynthesis I
+NCU06194	NCPWY:TRIGLSYN-PWY	triacylglycerol biosynthesis
+NCU09102	NCPWY:PWY-5921	L-glutamine biosynthesis II (tRNA-dependent)
+NCU09025	NCPWY:PWY-5921	L-glutamine biosynthesis II (tRNA-dependent)
+NCU02746	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU02746	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU02746	NCPWY:PWY2T-2574	aerobic respiration
+NCU00795	NCPWY:PWY-5986	ammonium transport
+NCU05882	NCPWY:PWY-6788	PWY-6788
+NCU05882	NCPWY:PWY2T-42	PWY2T-42
+NCU05882	NCPWY:PWY2T-7	cellulose degradation
+NCU01266	NCPWY:LIPASYN-PWY	phospholipases
+NCU10292	NCPWY:PWY-5189	tetrapyrrole biosynthesis II
+NCU01747	NCPWY:PWY0-381	glycerol degradation I
+NCU07681	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU07681	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU07681	NCPWY:PWY2T-2574	aerobic respiration
+NCU09897	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU09897	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU09897	NCPWY:PWY2T-2574	aerobic respiration
+NCU06783	NCPWY:PWY-5172	acetyl-CoA biosynthesis (from citrate)
+NCU07987	NCPWY:PWY-801	homocysteine and cysteine interconversion
+NCU07987	NCPWY:PWY2T-24	PWY2T-24
+NCU07263	NCPWY:PWY-6111-1	PWY-6111-1
+NCU06482	NCPWY:PWY2T-1450	xylose fermentation
+NCU06482	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU06482	NCPWY:PYRUVDEHYD-PWY	acetyl-CoA biosynthesis (from pyruvate)
+NCU02564	NCPWY:CYSTSYN-PWY	CYSTSYN-PWY
+NCU02564	NCPWY:PWY2T-24	PWY2T-24
+NCU05982	NCPWY:PWY-5870	ubiquinone-8 biosynthesis (eukaryotic)
+NCU05982	NCPWY:PWY-5871	ubiquinone-9 biosynthesis (eukaryotic)
+NCU05982	NCPWY:PWY-5872	ubiquinone-10 biosynthesis (eukaryotic)
+NCU05982	NCPWY:PWY-5873	ubiquinone-7 biosynthesis (eukaryotic)
+NCU05982	NCPWY:PWY3O-19	ubiquinone-6 biosynthesis (eukaryotic)
+NCU06465	NCPWY:PWY2T-23	PWY2T-23
+NCU06465	NCPWY:SPHINGOLIPID-SYN-PWY	sphingolipid metabolism
+NCU00168	NCPWY:PWY-5667	CDP-diacylglycerol biosynthesis I
+NCU00168	NCPWY:TRIGLSYN-PWY	triacylglycerol biosynthesis
+NCU00293	NCPWY:PYRIDNUCSAL-PWY	NAD salvage pathway I
+NCU00163	NCPWY:MANNOSYL-CHITO-DOLICHOL-BIOSYNTHESIS	dolichyl-diphosphooligosaccharide biosynthesis
+NCU06029	NCPWY:COA-PWY	coenzyme A biosynthesis
+NCU02657	NCPWY:METHIONINE-DEG1-PWY	methionine degradation I (to homocysteine)
+NCU02657	NCPWY:PWY-5041	<i>S</i>-adenosyl-L-methionine cycle II
+NCU02657	NCPWY:PWY2T-24	PWY2T-24
+NCU02657	NCPWY:SAM-PWY	S-adenosylmethionine biosynthesis
+NCU03154	NCPWY:COA-PWY	coenzyme A biosynthesis
+NCU01360	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU01360	NCPWY:PWY-4302	aerobic respiration -- electron donor III
+NCU01360	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU01360	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU01360	NCPWY:PWY2T-21	PWY2T-21
+NCU01360	NCPWY:PWY2T-2574	aerobic respiration
+NCU06142	NCPWY:NONOXIPENT-PWY	pentose phosphate pathway (non-oxidative branch)
+NCU06142	NCPWY:NONOXIPENT-PWY-1	pentose phosphate pathway (non-oxidative branch)
+NCU02344	NCPWY:PWY-6788	PWY-6788
+NCU02344	NCPWY:PWY2T-42	PWY2T-42
+NCU02344	NCPWY:PWY2T-7	cellulose degradation
+NCU00720	NCPWY:PWY-5481	pyruvate fermentation to lactate
+NCU00931	NCPWY:TRNA-CHARGING-PWY-1	TRNA-CHARGING-PWY-1
+NCU07732	NCPWY:ARGSYNBSUB-PWY-1	ARGSYNBSUB-PWY-1
+NCU07732	NCPWY:PWY-5686	uridine-5'-phosphate biosynthesis
+NCU02416	NCPWY:TRIGLSYN-PWY	triacylglycerol biosynthesis
+NCU03759	NCPWY:TRNA-CHARGING-PWY-1	TRNA-CHARGING-PWY-1
+NCU09855	NCPWY:PWY-5957	nicotianamine biosynthesis
+NCU08930	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU08930	NCPWY:PWY-4302	aerobic respiration -- electron donor III
+NCU08930	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU08930	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU08930	NCPWY:PWY2T-21	PWY2T-21
+NCU08930	NCPWY:PWY2T-2574	aerobic respiration
+NCU11353	NCPWY:LARABITOLUTIL-PWY	xylitol degradation
+NCU11353	NCPWY:NONOXIPENT-PWY-1	pentose phosphate pathway (non-oxidative branch)
+NCU00780	NCPWY:ALACAT2-PWY	alanine degradation II (to D-lactate)
+NCU00780	NCPWY:FERMENTATION-PWY	mixed acid fermentation
+NCU00580	NCPWY:PWY-5148	acyl-CoA hydrolysis
+NCU00580	NCPWY:PWY-5970-1	PWY-5970-1
+NCU00580	NCPWY:PWY-5972	PWY-5972
+NCU00580	NCPWY:PWY-5996	oleate biosynthesis II (animals)
+NCU00580	NCPWY:PWY0-1337	oleate &beta;-oxidation
+NCU00580	NCPWY:PWY2T-2575	PWY2T-2575
+NCU00580	NCPWY:PWY2T-2576	PWY2T-2576
+NCU00580	NCPWY:PWY2T-27	PWY2T-27
+NCU06700	NCPWY:LIPAS-PWY-1	LIPAS-PWY-1
+NCU02280	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU02280	NCPWY:PWY-4302	aerobic respiration -- electron donor III
+NCU02280	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU02280	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU02280	NCPWY:PWY2T-21	PWY2T-21
+NCU02280	NCPWY:PWY2T-2574	aerobic respiration
+NCU05220	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU05220	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU05220	NCPWY:PWY2T-2574	aerobic respiration
+NCU06452	NCPWY:CYSTSYN-PWY	CYSTSYN-PWY
+NCU06452	NCPWY:PWY2T-24	PWY2T-24
+NCU00418	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU00418	NCPWY:PWY-4302	aerobic respiration -- electron donor III
+NCU00418	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU00418	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU00418	NCPWY:PWY2T-21	PWY2T-21
+NCU00418	NCPWY:PWY2T-2574	aerobic respiration
+NCU02133	NCPWY:DETOX1-PWY	removal of superoxide radicals
+NCU04048	NCPWY:SALVADEHYPOX-PWY	salvage pathways of adenine, hypoxanthine, and their nucleosides
+NCU05642	NCPWY:TRNA-CHARGING-PWY-1	TRNA-CHARGING-PWY-1
+NCU04797	NCPWY:GLUCONEO-PWY	gluconeogenesis I
+NCU04797	NCPWY:GLYCOLYSIS-1	glycolysis I
+NCU04797	NCPWY:PWY-5484	glycolysis II
+NCU01428	NCPWY:PWY-5691	urate degradation to allantoin
+NCU05418	NCPWY:PWY-5905	hypusine biosynthesis
+NCU01500	NCPWY:PWY3O-4106	NAD salvage pathway III
+NCU04020	NCPWY:TRNA-CHARGING-PWY-1	TRNA-CHARGING-PWY-1
+NCU04460	NCPWY:PWY-6317	PWY-6317
+NCU00200	NCPWY:TRPSYN-PWY	tryptophan biosynthesis
+NCU06211	NCPWY:FERMENTATION-PWY	mixed acid fermentation
+NCU06211	NCPWY:GLUCONEO-PWY	gluconeogenesis I
+NCU06211	NCPWY:GLYOXYLATE-BYPASS	glyoxylate cycle
+NCU06211	NCPWY:MALATE-ASPARTATE-SHUTTLE-PWY	aspartate degradation II
+NCU06211	NCPWY:PWY-5690	TCA cycle variation III (eukaryotic)
+NCU04339	NCPWY:RIBOKIN-PWY	ribose degradation
+NCU07082	NCPWY:TRNA-CHARGING-PWY-1	TRNA-CHARGING-PWY-1
+NCU02726	NCPWY:PWY-3385	PWY-3385
+NCU02726	NCPWY:PWY4FS-6	phosphatidylethanolamine biosynthesis II
+NCU02585	NCPWY:TRNA-CHARGING-PWY-1	TRNA-CHARGING-PWY-1
+NCU01207	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU01207	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU01207	NCPWY:PWY2T-2574	aerobic respiration
+NCU02322	NCPWY:MANNCAT-PWY	D-mannose degradation
+NCU02322	NCPWY:PWY-5659	GDP-mannose biosynthesis
+NCU06866	NCPWY:TRNA-CHARGING-PWY-1	TRNA-CHARGING-PWY-1
+NCU09050	NCPWY:PWY-6085	2,4-dichlorophenoxyacetate degradation
+NCU06918	NCPWY:PWY-6227	PWY-6227
+NCU09460	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU09460	NCPWY:PWY-4302	aerobic respiration -- electron donor III
+NCU09460	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU09460	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU09460	NCPWY:PWY2T-21	PWY2T-21
+NCU09460	NCPWY:PWY2T-2574	aerobic respiration
+NCU00762	NCPWY:PWY-6788	PWY-6788
+NCU00762	NCPWY:PWY2T-42	PWY2T-42
+NCU00762	NCPWY:PWY2T-7	cellulose degradation
+NCU08313	NCPWY:PWY-6168	flavin biosynthesis III (eukaryotes)
+NCU07340	NCPWY:PWY-6788	PWY-6788
+NCU07340	NCPWY:PWY2T-42	PWY2T-42
+NCU07340	NCPWY:PWY2T-7	cellulose degradation
+NCU06191	NCPWY:GLUTATHIONESYN-PWY	glutathione biosynthesis
+NCU06025	NCPWY:PWY-6416	quinate degradation II
+NCU06110	NCPWY:PWY3O-17	PWY3O-17
+NCU06110	NCPWY:THISYNARA-PWY	THISYNARA-PWY
+NCU06722	NCPWY:TRNA-CHARGING-PWY-1	TRNA-CHARGING-PWY-1
+NCU04156	NCPWY:PWY-6075	ergosterol biosynthesis
+NCU09560	NCPWY:DETOX1-PWY	removal of superoxide radicals
+NCU09058	NCPWY:LEU-DEG2-PWY	leucine degradation I
+NCU06075	NCPWY:FERMENTATION-PWY	mixed acid fermentation
+NCU06075	NCPWY:GLYCOLYSIS-1	glycolysis I
+NCU06075	NCPWY:PWY-5484	glycolysis II
+NCU06075	NCPWY:PWY2T-1450	xylose fermentation
+NCU02291	NCPWY:PWY-5177	glutaryl-CoA degradation
+NCU09324	NCPWY:PWY2T-19	PWY2T-19
+NCU08287	NCPWY:ARGSYNBSUB-PWY-1	ARGSYNBSUB-PWY-1
+NCU08287	NCPWY:PWY-5686	uridine-5'-phosphate biosynthesis
+NCU09803	NCPWY:P164-PWY	purine degradation III (anaerobic)
+NCU09803	NCPWY:PWY-6126-1	PWY-6126-1
+NCU09803	NCPWY:PWY0-166	pyrimidine deoxyribonucleotides <i>de novo</i> biosynthesis
+NCU09803	NCPWY:PWY2T-25	PWY2T-25
+NCU09803	NCPWY:SO4ASSIM-PWY	sulfate reduction I (assimilatory)
+NCU09803	NCPWY:SO4ASSIM-PWY-1	SO4ASSIM-PWY-1
+NCU09803	NCPWY:THIOREDOX-PWY	thioredoxin pathway
+NCU05708	NCPWY:PWY-5418	phenol degradation I (aerobic)
+NCU08760	NCPWY:PWY-6788	PWY-6788
+NCU08760	NCPWY:PWY2T-42	PWY2T-42
+NCU08760	NCPWY:PWY2T-7	cellulose degradation
+NCU00810	NCPWY:BGALACT-PWY	lactose degradation III
+NCU09116	NCPWY:PHESYN	phenylalanine biosynthesis I
+NCU09116	NCPWY:PWY-5079	phenylalanine degradation III
+NCU09116	NCPWY:PWY-5082	methionine degradation III
+NCU09116	NCPWY:PWY-5886	4-hydroxyphenylpyruvate biosynthesis
+NCU09116	NCPWY:PWY3O-4108-1	PWY3O-4108-1
+NCU09116	NCPWY:TYRFUMCAT-PWY	tyrosine degradation I
+NCU09116	NCPWY:TYRSYN-1	TYRSYN-1
+NCU02693	NCPWY:PWY-6074	zymosterol biosynthesis
+NCU07608	NCPWY:NONOXIPENT-PWY	pentose phosphate pathway (non-oxidative branch)
+NCU07608	NCPWY:NONOXIPENT-PWY-1	pentose phosphate pathway (non-oxidative branch)
+NCU08888	NCPWY:TRNA-CHARGING-PWY-1	TRNA-CHARGING-PWY-1
+NCU03748	NCPWY:LYSINE-AMINOAD-PWY	lysine biosynthesis IV
+NCU03748	NCPWY:LYSINE-DEG1-PWY	LYSINE-DEG1-PWY
+NCU03492	NCPWY:PWY2T-23	PWY2T-23
+NCU03492	NCPWY:SPHINGOLIPID-SYN-PWY	sphingolipid metabolism
+NCU00936	NCPWY:GLUDEG-I-PWY	GLUDEG-I-PWY
+NCU00936	NCPWY:PWY-6535	PWY-6535
+NCU00936	NCPWY:PWY-6537	PWY-6537
+NCU03023	NCPWY:PWY-5418	phenol degradation I (aerobic)
+NCU07309	NCPWY:P164-PWY	purine degradation III (anaerobic)
+NCU07309	NCPWY:PWY-5497	purine degradation II (anaerobic)
+NCU07309	NCPWY:SALVPURINE2-PWY	salvage pathways of guanine, xanthine, and their nucleosides
+NCU09463	NCPWY:TRNA-CHARGING-PWY-1	TRNA-CHARGING-PWY-1
+NCU06836	NCPWY:PWY0-1313	acetate conversion to acetyl-CoA
+NCU06836	NCPWY:PWY66-162	oxidative ethanol degradation III
+NCU06836	NCPWY:PWY66-21	oxidative ethanol degradation I
+NCU06741	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU06741	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU06741	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU06741	NCPWY:PWY2T-21	PWY2T-21
+NCU06741	NCPWY:PWY2T-2574	aerobic respiration
+NCU04997	NCPWY:PWY2T-10	xylan degradation
+NCU05129	NCPWY:TRPSYN-PWY	tryptophan biosynthesis
+NCU05542	NCPWY:SALVADEHYPOX-PWY	salvage pathways of adenine, hypoxanthine, and their nucleosides
+NCU05542	NCPWY:SALVPURINE2-PWY	salvage pathways of guanine, xanthine, and their nucleosides
+NCU04074	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU04074	NCPWY:PWY-4302	aerobic respiration -- electron donor III
+NCU04074	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU04074	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU04074	NCPWY:PWY2T-21	PWY2T-21
+NCU04074	NCPWY:PWY2T-2574	aerobic respiration
+NCU03935	NCPWY:HOMOSERSYN-PWY	homoserine biosynthesis
+NCU04303	NCPWY:ASPARAGINE-BIOSYNTHESIS	asparagine biosynthesis I
+NCU08947	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU08947	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU08947	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU08947	NCPWY:PWY2T-21	PWY2T-21
+NCU08947	NCPWY:PWY2T-2574	aerobic respiration
+NCU02430	NCPWY:PWY-801	homocysteine and cysteine interconversion
+NCU02430	NCPWY:PWY2T-24	PWY2T-24
+NCU02369	NCPWY:PWY-1081	homogalacturonan degradation
+NCU07442	NCPWY:PWY-5768	pyruvate fermentation to acetate VIII
+NCU16398	NCPWY:HEME-BIOSYNTHESIS-II	heme biosynthesis from uroporphyrinogen-III I
+NCU05252	NCPWY:PWY-5905	hypusine biosynthesis
+NCU01141	NCPWY:PWY-5269	cardiolipin biosynthesis II
+NCU01141	NCPWY:PWY4FS-8	phosphatidylglycerol biosynthesis II
+NCU08398	NCPWY:PWY-6317	PWY-6317
+NCU03117	NCPWY:PWY-841	purine nucleotides <i>de novo</i> biosynthesis II
+NCU05009	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU05009	NCPWY:PWY-4302	aerobic respiration -- electron donor III
+NCU05009	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU05009	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU05009	NCPWY:PWY2T-21	PWY2T-21
+NCU05009	NCPWY:PWY2T-2574	aerobic respiration
+NCU04753	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU04753	NCPWY:PWY-4302	aerobic respiration -- electron donor III
+NCU04753	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU04753	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU04753	NCPWY:PWY2T-21	PWY2T-21
+NCU04753	NCPWY:PWY2T-2574	aerobic respiration
+NCU04721	NCPWY:PWY2T-23	PWY2T-23
+NCU04721	NCPWY:PWY3DJ-11470	sphingosine and sphingosine-1-phosphate metabolism
+NCU04721	NCPWY:SPHINGOLIPID-SYN-PWY	sphingolipid metabolism
+NCU09545	NCPWY:1CMET2-PWY	formylTHF biosynthesis I
+NCU09545	NCPWY:PWY-2201	folate transformations
+NCU09545	NCPWY:PWY-3841	formylTHF biosynthesis II
+NCU09545	NCPWY:PWY2T-24	PWY2T-24
+NCU01270	NCPWY:PWY0-662	PRPP biosynthesis I
+NCU10057	NCPWY:PWY-6100	L-carnitine biosynthesis
+NCU01753	NCPWY:PWY-4041	&gamma;-glutamyl cycle
+NCU09594	NCPWY:TRNA-CHARGING-PWY-1	TRNA-CHARGING-PWY-1
+NCU06845	NCPWY:PWY-4101	sorbitol degradation I
+NCU03290	NCPWY:PWY-4041	&gamma;-glutamyl cycle
+NCU16860	NCPWY:MANNOSYL-CHITO-DOLICHOL-BIOSYNTHESIS	dolichyl-diphosphooligosaccharide biosynthesis
+NCU00369	NCPWY:COA-PWY	coenzyme A biosynthesis
+NCU00466	NCPWY:PWY-5921	L-glutamine biosynthesis II (tRNA-dependent)
+NCU00466	NCPWY:TRNA-CHARGING-PWY-1	TRNA-CHARGING-PWY-1
+NCU06005	NCPWY:PWY-4261	glycerol degradation IV
+NCU06005	NCPWY:PWY0-381	glycerol degradation I
+NCU05095	NCPWY:TRNA-CHARGING-PWY-1	TRNA-CHARGING-PWY-1
+NCU09692	NCPWY:TRIGLSYN-PWY	triacylglycerol biosynthesis
+NCU04594	NCPWY:PROTOCATECHUATE-ORTHO-CLEAVAGE-PWY	PROTOCATECHUATE-ORTHO-CLEAVAGE-PWY
+NCU01412	NCPWY:PROSYN-PWY	proline biosynthesis I
+NCU06054	NCPWY:PWY-5670	epoxysqualene biosynthesis
+NCU09192	NCPWY:PWY-6352	3-phosphoinositide biosynthesis
+NCU07937	NCPWY:PWY2T-23	PWY2T-23
+NCU07937	NCPWY:PWY3DJ-11470	sphingosine and sphingosine-1-phosphate metabolism
+NCU07937	NCPWY:SPHINGOLIPID-SYN-PWY	sphingolipid metabolism
+NCU00629	NCPWY:GLYCOLYSIS-1	glycolysis I
+NCU00629	NCPWY:PWY-5484	glycolysis II
+NCU00629	NCPWY:PWY2T-1450	xylose fermentation
+NCU02004	NCPWY:SERSYN-PWY	serine biosynthesis
+NCU10506	NCPWY:LIPAS-PWY-1	LIPAS-PWY-1
+NCU06559	NCPWY:VALDEG-PWY	valine degradation I
+NCU07261	NCPWY:MANNOSYL-CHITO-DOLICHOL-BIOSYNTHESIS	dolichyl-diphosphooligosaccharide biosynthesis
+NCU07725	NCPWY:PHESYN	phenylalanine biosynthesis I
+NCU07725	NCPWY:TYRSYN-1	TYRSYN-1
+NCU07755	NCPWY:TRNA-CHARGING-PWY-1	TRNA-CHARGING-PWY-1
+NCU01213	NCPWY:DETOX1-PWY	removal of superoxide radicals
+NCU01142	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU01142	NCPWY:PWY-4302	aerobic respiration -- electron donor III
+NCU01142	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU01142	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU01142	NCPWY:PWY2T-21	PWY2T-21
+NCU01142	NCPWY:PWY2T-2574	aerobic respiration
+NCU01328	NCPWY:NONOXIPENT-PWY	pentose phosphate pathway (non-oxidative branch)
+NCU01328	NCPWY:NONOXIPENT-PWY-1	pentose phosphate pathway (non-oxidative branch)
+NCU08058	NCPWY:PWY-5177	glutaryl-CoA degradation
+NCU10351	NCPWY:PLPSAL-PWY	pyridoxal 5'-phosphate salvage pathway
+NCU00660	NCPWY:PWY-5921	L-glutamine biosynthesis II (tRNA-dependent)
+NCU09367	NCPWY:PWY-6352	3-phosphoinositide biosynthesis
+NCU07458	NCPWY:UDPNACETYLGALSYN-PWY	UDP-<i>N</i>-acetyl-D-glucosamine biosynthesis II
+NCU04289	NCPWY:PWY4FS-6	phosphatidylethanolamine biosynthesis II
+NCU01083	NCPWY:ARGSPECAT-PWY	ARGSPECAT-PWY
+NCU01083	NCPWY:BSUBPOLYAMSYN-PWY	spermidine biosynthesis
+NCU01429	NCPWY:SERSYN-PWY	serine biosynthesis
+NCU08925	NCPWY:PWY-5760	&beta;-alanine biosynthesis V
+NCU09817	NCPWY:ARO-PWY	chorismate biosynthesis I
+NCU09817	NCPWY:PWY-6164	3-dehydroquinate biosynthesis I
+NCU08977	NCPWY:PWY-2724	fatty acid &omega;-oxidation
+NCU01902	NCPWY:UDPNACETYLGALSYN-PWY	UDP-<i>N</i>-acetyl-D-glucosamine biosynthesis II
+NCU00575	NCPWY:PWY-621-1	PWY-621-1
+NCU00575	NCPWY:PWY2T-19	PWY2T-19
+NCU09090	NCPWY:COA-PWY	coenzyme A biosynthesis
+NCU04736	NCPWY:PWY-6188	calmodulin regulated calcium transport
+NCU06724	NCPWY:GLNSYN-PWY	glutamine biosynthesis I
+NCU06724	NCPWY:PWY-5675-1	PWY-5675-1
+NCU07761	NCPWY:PWY2T-23	PWY2T-23
+NCU07761	NCPWY:SPHINGOLIPID-SYN-PWY	sphingolipid metabolism
+NCU01900	NCPWY:PWY2T-10	xylan degradation
+NCU00678	NCPWY:GLUDEG-I-PWY	GLUDEG-I-PWY
+NCU02906	NCPWY:GLUCONEO-PWY	gluconeogenesis I
+NCU05770	NCPWY:DETOX1-PWY	removal of superoxide radicals
+NCU05770	NCPWY:PWY66-162	oxidative ethanol degradation III
+NCU07153	NCPWY:PWY-4041	&gamma;-glutamyl cycle
+NCU08549	NCPWY:PWY-6317	PWY-6317
+NCU00187	NCPWY:PWY0-42	2-methylcitrate cycle I
+NCU05991	NCPWY:PWY-6074	zymosterol biosynthesis
+NCU03846	NCPWY:PWY-6168	flavin biosynthesis III (eukaryotes)
+NCU03949	NCPWY:PWY-723	2-nitropropane degradation
+NCU02209	NCPWY:PWY2T-2575	PWY2T-2575
+NCU03970	NCPWY:PWY-6168	flavin biosynthesis III (eukaryotes)
+NCU03996	NCPWY:PWY-6788	PWY-6788
+NCU03996	NCPWY:PWY2T-42	PWY2T-42
+NCU03914	NCPWY:PWY-6788	PWY-6788
+NCU03914	NCPWY:PWY2T-42	PWY2T-42
+NCU03914	NCPWY:PWY2T-7	cellulose degradation
+NCU04393	NCPWY:PWY-5177	glutaryl-CoA degradation
+NCU04642	NCPWY:SALVADEHYPOX-PWY	salvage pathways of adenine, hypoxanthine, and their nucleosides
+NCU07819	NCPWY:PWY0-981	taurine degradation IV
+NCU01765	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU01765	NCPWY:PWY-4302	aerobic respiration -- electron donor III
+NCU01765	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU01765	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU01765	NCPWY:PWY2T-21	PWY2T-21
+NCU01765	NCPWY:PWY2T-2574	aerobic respiration
+NCU03503	NCPWY:MANNOSYL-CHITO-DOLICHOL-BIOSYNTHESIS	dolichyl-diphosphooligosaccharide biosynthesis
+NCU10048	NCPWY:PANTO-PWY	pantothenate biosynthesis I
+NCU10110	NCPWY:VALDEG-PWY	valine degradation I
+NCU07300	NCPWY:ASPARAGINE-BIOSYNTHESIS	asparagine biosynthesis I
+NCU04856	NCPWY:GLNSYN-PWY	glutamine biosynthesis I
+NCU04856	NCPWY:PWY-5675-1	PWY-5675-1
+NCU04323	NCPWY:PWY-5686	uridine-5'-phosphate biosynthesis
+NCU01652	NCPWY:PWY-5344	homocysteine biosynthesis
+NCU04648	NCPWY:PWY-5653	PWY-5653
+NCU04648	NCPWY:PYRIDNUCSAL-PWY	NAD salvage pathway I
+NCU08791	NCPWY:DETOX1-PWY	removal of superoxide radicals
+NCU08791	NCPWY:PWY66-162	oxidative ethanol degradation III
+NCU09184	NCPWY:PWY-6309	tryptophan degradation XI (mammalian, via kynurenine)
+NCU09002	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU09002	NCPWY:PWY-4302	aerobic respiration -- electron donor III
+NCU09002	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU09002	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU09002	NCPWY:PWY2T-21	PWY2T-21
+NCU09002	NCPWY:PWY2T-2574	aerobic respiration
+NCU03093	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU03093	NCPWY:PWY-4302	aerobic respiration -- electron donor III
+NCU03093	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU03093	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU03093	NCPWY:PWY2T-21	PWY2T-21
+NCU03093	NCPWY:PWY2T-2574	aerobic respiration
+NCU02629	NCPWY:PWY-6124	inosine-5'-phosphate biosynthesis II
+NCU12137	NCPWY:MANNOSYL-CHITO-DOLICHOL-BIOSYNTHESIS	dolichyl-diphosphooligosaccharide biosynthesis
+NCU02356	NCPWY:PWY2T-41	PWY2T-41
+NCU02380	NCPWY:TRNA-CHARGING-PWY-1	TRNA-CHARGING-PWY-1
+NCU02916	NCPWY:PWY-6788	PWY-6788
+NCU02916	NCPWY:PWY2T-42	PWY2T-42
+NCU02916	NCPWY:PWY2T-7	cellulose degradation
+NCU09892	NCPWY:TRNA-CHARGING-PWY-1	TRNA-CHARGING-PWY-1
+NCU07898	NCPWY:PWY-6788	PWY-6788
+NCU07898	NCPWY:PWY2T-42	PWY2T-42
+NCU07898	NCPWY:PWY2T-7	cellulose degradation
+NCU02408	NCPWY:PWY-5995	PWY-5995
+NCU02408	NCPWY:PWY-5996	oleate biosynthesis II (animals)
+NCU02408	NCPWY:PWY-5997	PWY-5997
+NCU02408	NCPWY:PWY-6000	&gamma;-linolenate biosynthesis II (animals)
+NCU02408	NCPWY:PWY2T-20	PWY2T-20
+NCU02408	NCPWY:PWY2T-2576	PWY2T-2576
+NCU08471	NCPWY:PWY-5690	TCA cycle variation III (eukaryotic)
+NCU01667	NCPWY:ARGSYNBSUB-PWY-1	ARGSYNBSUB-PWY-1
+NCU01611	NCPWY:PWY-6111-1	PWY-6111-1
+NCU06714	NCPWY:FOLSYN-PWY	tetrahydrofolate biosynthesis
+NCU06714	NCPWY:PWY-6543	PWY-6543
+NCU03282	NCPWY:PWY-5651	tryptophan degradation to 2-amino-3-carboxymuconate semialdehyde
+NCU03282	NCPWY:PWY-6309	tryptophan degradation XI (mammalian, via kynurenine)
+NCU00502	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU00502	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU00502	NCPWY:PWY2T-2574	aerobic respiration
+NCU06543	NCPWY:ILEUDEG-PWY	isoleucine degradation I
+NCU06543	NCPWY:VALDEG-PWY	valine degradation I
+NCU03166	NCPWY:PWY-6124	inosine-5'-phosphate biosynthesis II
+NCU04019	NCPWY:PWY-5653	PWY-5653
+NCU04019	NCPWY:PWY3O-4106	NAD salvage pathway III
+NCU04019	NCPWY:PYRIDNUCSAL-PWY	NAD salvage pathway I
+NCU04013	NCPWY:PWY-6681	PWY-6681
+NCU09885	NCPWY:FAO-PWY	fatty acid &beta;-oxidation I
+NCU09885	NCPWY:PWY-5136-1	PWY-5136-1
+NCU05558	NCPWY:FAO-PWY	fatty acid &beta;-oxidation I
+NCU05558	NCPWY:PWY-5136-1	PWY-5136-1
+NCU03607	NCPWY:PWY-6196	serine racemization
+NCU01402	NCPWY:PWY-6309	tryptophan degradation XI (mammalian, via kynurenine)
+NCU02305	NCPWY:HEXPPSYN-PWY	hexaprenyl diphosphate biosynthesis
+NCU02305	NCPWY:PWY-5783	octaprenyl diphosphate biosynthesis
+NCU02305	NCPWY:PWY-5805	nonaprenyl diphosphate biosynthesis
+NCU02305	NCPWY:PWY-5806	decaprenyl diphosphate biosynthesis
+NCU02305	NCPWY:PWY-5807	heptaprenyl diphosphate biosynthesis
+NCU02295	NCPWY:PWY-6352	3-phosphoinositide biosynthesis
+NCU01965	NCPWY:TRNA-CHARGING-PWY-1	TRNA-CHARGING-PWY-1
+NCU03030	NCPWY:TRNA-CHARGING-PWY-1	TRNA-CHARGING-PWY-1
+NCU07318	NCPWY:MANNIDEG-PWY	mannitol degradation I
+NCU04411	NCPWY:TRPSYN-PWY	tryptophan biosynthesis
+NCU04854	NCPWY:PWY-6788	PWY-6788
+NCU04854	NCPWY:PWY2T-42	PWY2T-42
+NCU04854	NCPWY:PWY2T-7	cellulose degradation
+NCU09841	NCPWY:PWY3O-17	PWY3O-17
+NCU09841	NCPWY:THISYNARA-PWY	THISYNARA-PWY
+NCU03006	NCPWY:PWY-6075	ergosterol biosynthesis
+NCU09266	NCPWY:VALDEG-PWY	valine degradation I
+NCU00969	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU00969	NCPWY:PWY-4302	aerobic respiration -- electron donor III
+NCU00969	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU00969	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU00969	NCPWY:PWY2T-21	PWY2T-21
+NCU00969	NCPWY:PWY2T-2574	aerobic respiration
+NCU03223	NCPWY:PWY-3561	choline biosynthesis III
+NCU03223	NCPWY:PWY3O-450	phosphatidylcholine biosynthesis I
+NCU03223	NCPWY:PWY4FS-6	phosphatidylethanolamine biosynthesis II
+NCU16336	NCPWY:PWY-5177	glutaryl-CoA degradation
+NCU02969	NCPWY:PWY2T-23	PWY2T-23
+NCU02969	NCPWY:PWY3DJ-11470	sphingosine and sphingosine-1-phosphate metabolism
+NCU02969	NCPWY:SPHINGOLIPID-SYN-PWY	sphingolipid metabolism
+NCU03129	NCPWY:TRNA-CHARGING-PWY-1	TRNA-CHARGING-PWY-1
+NCU02250	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU02250	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU02250	NCPWY:PWY2T-2574	aerobic respiration
+NCU03415	NCPWY:PWY-2724	fatty acid &omega;-oxidation
+NCU03415	NCPWY:PWY-5458	methylglyoxal degradation V
+NCU03415	NCPWY:PWY-5760	&beta;-alanine biosynthesis V
+NCU03415	NCPWY:PWY-5768	pyruvate fermentation to acetate VIII
+NCU03415	NCPWY:PWY-6100	L-carnitine biosynthesis
+NCU03415	NCPWY:PWY66-162	oxidative ethanol degradation III
+NCU03415	NCPWY:PWY66-21	oxidative ethanol degradation I
+NCU07774	NCPWY:FOLSYN-PWY	tetrahydrofolate biosynthesis
+NCU07774	NCPWY:PWY-5663	PWY-5663
+NCU07774	NCPWY:PWY-6147	6-hydroxymethyl-dihydropterin diphosphate biosynthesis
+NCU00468	NCPWY:TYRSYN-1	TYRSYN-1
+NCU00944	NCPWY:PWY-5436	PWY-5436
+NCU05133	NCPWY:PWY-6317	PWY-6317
+NCU03814	NCPWY:TRNA-CHARGING-PWY-1	TRNA-CHARGING-PWY-1
+NCU02265	NCPWY:PWY2T-41	PWY2T-41
+NCU02514	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU02514	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU02514	NCPWY:PWY2T-2574	aerobic respiration
+NCU06532	NCPWY:PWY-5686	uridine-5'-phosphate biosynthesis
+NCU05299	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU05299	NCPWY:PWY-4302	aerobic respiration -- electron donor III
+NCU05299	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU05299	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU05299	NCPWY:PWY2T-21	PWY2T-21
+NCU05299	NCPWY:PWY2T-2574	aerobic respiration
+NCU08687	NCPWY:PWY-6317	PWY-6317
+NCU00261	NCPWY:PWY-5687	pyrimidine ribonucleotides interconversion
+NCU05457	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU05457	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU05457	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU05457	NCPWY:PWY2T-21	PWY2T-21
+NCU05457	NCPWY:PWY2T-2574	aerobic respiration
+NCU01169	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU01169	NCPWY:PWY-4302	aerobic respiration -- electron donor III
+NCU01169	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU01169	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU01169	NCPWY:PWY2T-21	PWY2T-21
+NCU01169	NCPWY:PWY2T-2574	aerobic respiration
+NCU02702	NCPWY:ANAEROFRUCAT-PWY	homolactic fermentation
+NCU02702	NCPWY:GLUCOSE1PMETAB-PWY	glucose and glucose-1-phosphate degradation
+NCU02702	NCPWY:GLYCOCAT-PWY	glycogen degradation I
+NCU02702	NCPWY:PWY-5661	GDP-glucose biosynthesis
+NCU02702	NCPWY:PWY0-1182	trehalose degradation II (trehalase)
+NCU02702	NCPWY:PWY2T-9	cellulose conversion to ethanol
+NCU00743	NCPWY:GLYCOCAT-PWY	glycogen degradation I
+NCU00743	NCPWY:PWY-5941	glycogen degradation II
+NCU00743	NCPWY:PWY-5941-1	PWY-5941-1
+NCU03139	NCPWY:HISTSYN-PWY	histidine biosynthesis
+NCU00655	NCPWY:PWY-5972	PWY-5972
+NCU05169	NCPWY:DETOX1-PWY	removal of superoxide radicals
+NCU05169	NCPWY:PWY66-162	oxidative ethanol degradation III
+NCU03955	NCPWY:LIPASYN-PWY	phospholipases
+NCU03955	NCPWY:PWY-3561	choline biosynthesis III
+NCU05624	NCPWY:ASPARAGINE-DEG1-PWY	asparagine degradation I
+NCU07853	NCPWY:PWY-5691	urate degradation to allantoin
+NCU03317	NCPWY:MANNOSYL-CHITO-DOLICHOL-BIOSYNTHESIS	dolichyl-diphosphooligosaccharide biosynthesis
+NCU09111	NCPWY:OXIDATIVEPENT-PWY	OXIDATIVEPENT-PWY
+NCU09111	NCPWY:OXIDATIVEPENT-PWY-1	pentose phosphate pathway (oxidative branch)
+NCU05499	NCPWY:TYRFUMCAT-PWY	tyrosine degradation I
+NCU03922	NCPWY:PWY-922	mevalonate pathway I
+NCU05057	NCPWY:PWY-6788	PWY-6788
+NCU05057	NCPWY:PWY2T-42	PWY2T-42
+NCU05057	NCPWY:PWY2T-7	cellulose degradation
+NCU05924	NCPWY:PWY2T-10	xylan degradation
+NCU03100	NCPWY:OXIDATIVEPENT-PWY	OXIDATIVEPENT-PWY
+NCU03100	NCPWY:OXIDATIVEPENT-PWY-1	pentose phosphate pathway (oxidative branch)
+NCU06342	NCPWY:LIPASYN-PWY	phospholipases
+NCU06342	NCPWY:PWY-3561	choline biosynthesis III
+NCU02534	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU02534	NCPWY:PWY-4302	aerobic respiration -- electron donor III
+NCU02534	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU02534	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU02534	NCPWY:PWY2T-21	PWY2T-21
+NCU02534	NCPWY:PWY2T-2574	aerobic respiration
+NCU00585	NCPWY:PWY-5943	PWY-5943
+NCU00585	NCPWY:PWY-6287	PWY-6287
+NCU00585	NCPWY:PWY-6475	PWY-6475
+NCU00585	NCPWY:PWY-6681	PWY-6681
+NCU00554	NCPWY:HOMOSERSYN-PWY	homoserine biosynthesis
+NCU07773	NCPWY:PWY0-166	pyrimidine deoxyribonucleotides <i>de novo</i> biosynthesis
+NCU08894	NCPWY:TRNA-CHARGING-PWY-1	TRNA-CHARGING-PWY-1
+NCU00355	NCPWY:DETOX1-PWY	removal of superoxide radicals
+NCU00355	NCPWY:PWY66-162	oxidative ethanol degradation III
+NCU06457	NCPWY:TRNA-CHARGING-PWY-1	TRNA-CHARGING-PWY-1
+NCU00385	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU00385	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU00385	NCPWY:PWY2T-2574	aerobic respiration
+NCU00177	NCPWY:PWY-6121	5-aminoimidazole ribonucleotide biosynthesis I
+NCU06232	NCPWY:LEUSYN-PWY	leucine biosynthesis
+NCU00891	NCPWY:LARABITOLUTIL-PWY	xylitol degradation
+NCU00891	NCPWY:PWY-4101	sorbitol degradation I
+NCU06207	NCPWY:PWY-6075	ergosterol biosynthesis
+NCU01654	NCPWY:FAO-PWY	fatty acid &beta;-oxidation I
+NCU01654	NCPWY:PWY-5136-1	PWY-5136-1
+NCU01654	NCPWY:PWY-5143	fatty acid activation
+NCU01654	NCPWY:PWY-5972	PWY-5972
+NCU01654	NCPWY:PWY2T-2575	PWY2T-2575
+NCU01654	NCPWY:PWY2T-2576	PWY2T-2576
+NCU01337	NCPWY:1CMET2-PWY	formylTHF biosynthesis I
+NCU01337	NCPWY:FOLSYN-PWY	tetrahydrofolate biosynthesis
+NCU01337	NCPWY:PWY-2161	folate polyglutamylation I
+NCU01337	NCPWY:PWY-3841	formylTHF biosynthesis II
+NCU06448	NCPWY:FAO-PWY	fatty acid &beta;-oxidation I
+NCU06448	NCPWY:ILEUDEG-PWY	isoleucine degradation I
+NCU06448	NCPWY:PWY-5136-1	PWY-5136-1
+NCU06448	NCPWY:PWY-5177	glutaryl-CoA degradation
+NCU06448	NCPWY:VALDEG-PWY	valine degradation I
+NCU02785	NCPWY:ARO-PWY	chorismate biosynthesis I
+NCU02785	NCPWY:PWY-6164	3-dehydroquinate biosynthesis I
+NCU09800	NCPWY:PWY0-981	taurine degradation IV
+NCU12069	NCPWY:PWY-6126-1	PWY-6126-1
+NCU01417	NCPWY:PWY0-42	2-methylcitrate cycle I
+NCU09320	NCPWY:HISTSYN-PWY	histidine biosynthesis
+NCU10042	NCPWY:GLUCONEO-PWY	gluconeogenesis I
+NCU10042	NCPWY:GLYCOLYSIS-1	glycolysis I
+NCU10042	NCPWY:PWY-5484	glycolysis II
+NCU10042	NCPWY:PWY2T-1450	xylose fermentation
+NCU02727	NCPWY:1CMET2-PWY	formylTHF biosynthesis I
+NCU02727	NCPWY:GLYCLEAV-PWY	glycine cleavage complex
+NCU02727	NCPWY:PWY-2201	folate transformations
+NCU02727	NCPWY:PWY-3841	formylTHF biosynthesis II
+NCU02727	NCPWY:PWY2T-24	PWY2T-24
+NCU07053	NCPWY:PWY-2724	fatty acid &omega;-oxidation
+NCU07053	NCPWY:PWY-5458	methylglyoxal degradation V
+NCU07053	NCPWY:PWY-5760	&beta;-alanine biosynthesis V
+NCU07053	NCPWY:PWY66-162	oxidative ethanol degradation III
+NCU07053	NCPWY:PWY66-21	oxidative ethanol degradation I
+NCU04216	NCPWY:PWY-6121	5-aminoimidazole ribonucleotide biosynthesis I
+NCU03255	NCPWY:PWY3O-17	PWY3O-17
+NCU03255	NCPWY:THISYNARA-PWY	THISYNARA-PWY
+NCU09911	NCPWY:1CMET2-PWY	formylTHF biosynthesis I
+NCU09911	NCPWY:PWY-2201	folate transformations
+NCU07719	NCPWY:PWY-5123	<i>trans,trans</i>-farnesyl diphosphate biosynthesis
+NCU07719	NCPWY:PWY-922	mevalonate pathway I
+NCU00194	NCPWY:ARG-PRO-PWY	arginine degradation VI (arginase 2 pathway)
+NCU00742	NCPWY:PWY-5667	CDP-diacylglycerol biosynthesis I
+NCU00742	NCPWY:PWY-6118	glycerol-3-phosphate shuttle
+NCU06419	NCPWY:PWY2T-39	PWY2T-39
+NCU04781	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU04781	NCPWY:PWY-4302	aerobic respiration -- electron donor III
+NCU04781	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU04781	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU04781	NCPWY:PWY2T-21	PWY2T-21
+NCU04781	NCPWY:PWY2T-2574	aerobic respiration
+NCU04727	NCPWY:GLUAMCAT-PWY	<i>N</i>-acetylglucosamine degradation
+NCU02083	NCPWY:PWY-6352	3-phosphoinositide biosynthesis
+NCU00902	NCPWY:PWY2T-41	PWY2T-41
+NCU01632	NCPWY:ARO-PWY	chorismate biosynthesis I
+NCU01632	NCPWY:PWY-6164	3-dehydroquinate biosynthesis I
+NCU01632	NCPWY:PWY-6416	quinate degradation II
+NCU09896	NCPWY:PWY-5340	sulfate activation for sulfonation
+NCU06804	NCPWY:PWY-5418	phenol degradation I (aerobic)
+NCU09345	NCPWY:PWY3O-17	PWY3O-17
+NCU07169	NCPWY:PWY2T-7	cellulose degradation
+NCU06471	NCPWY:ARG-PRO-PWY	arginine degradation VI (arginase 2 pathway)
+NCU06471	NCPWY:PROSYN-PWY	proline biosynthesis I
+NCU00378	NCPWY:PWY-2724	fatty acid &omega;-oxidation
+NCU00378	NCPWY:PWY-5458	methylglyoxal degradation V
+NCU00378	NCPWY:PWY-5760	&beta;-alanine biosynthesis V
+NCU00378	NCPWY:PWY-6100	L-carnitine biosynthesis
+NCU00378	NCPWY:PWY66-162	oxidative ethanol degradation III
+NCU00378	NCPWY:PWY66-21	oxidative ethanol degradation I
+NCU05752	NCPWY:PWY-5651	tryptophan degradation to 2-amino-3-carboxymuconate semialdehyde
+NCU05752	NCPWY:PWY-6309	tryptophan degradation XI (mammalian, via kynurenine)
+NCU02296	NCPWY:PWY-5697	allantoin degradation to ureidoglycolate I (urea producing)
+NCU02090	NCPWY:SALVADEHYPOX-PWY	salvage pathways of adenine, hypoxanthine, and their nucleosides
+NCU00644	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU00644	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU00644	NCPWY:PWY2T-2574	aerobic respiration
+NCU09230	NCPWY:HOMOCYSDEGR-PWY	HOMOCYSDEGR-PWY
+NCU09230	NCPWY:LCYSDEG-PWY	L-cysteine degradation II
+NCU09230	NCPWY:PWY-801	homocysteine and cysteine interconversion
+NCU03325	NCPWY:LIPAS-PWY-1	LIPAS-PWY-1
+NCU02954	NCPWY:LYSINE-AMINOAD-PWY	lysine biosynthesis IV
+NCU03395	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU03395	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU03395	NCPWY:PWY2T-2574	aerobic respiration
+NCU00405	NCPWY:TRNA-CHARGING-PWY-1	TRNA-CHARGING-PWY-1
+NCU07413	NCPWY:PWY0-163	salvage pathways of pyrimidine ribonucleotides
+NCU05454	NCPWY:PWY0-381	glycerol degradation I
+NCU02407	NCPWY:1CMET2-PWY	formylTHF biosynthesis I
+NCU02407	NCPWY:GLYCLEAV-PWY	glycine cleavage complex
+NCU02407	NCPWY:ILEUDEG-PWY	isoleucine degradation I
+NCU02407	NCPWY:PWY-2201	folate transformations
+NCU02407	NCPWY:PWY-3841	formylTHF biosynthesis II
+NCU02407	NCPWY:PWY-5046	branched-chain &alpha;-keto acid dehydrogenase complex
+NCU02407	NCPWY:PWY-5084	2-ketoglutarate dehydrogenase complex
+NCU02407	NCPWY:PWY-5690	TCA cycle variation III (eukaryotic)
+NCU02407	NCPWY:PWY2T-1450	xylose fermentation
+NCU02407	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU02407	NCPWY:PWY2T-24	PWY2T-24
+NCU02407	NCPWY:PYRUVDEHYD-PWY	acetyl-CoA biosynthesis (from pyruvate)
+NCU02407	NCPWY:VALDEG-PWY	valine degradation I
+NCU02855	NCPWY:PWY2T-10	xylan degradation
+NCU05041	NCPWY:TRESYN-PWY	trehalose biosynthesis I
+NCU06024	NCPWY:PWY-6416	quinate degradation II
+NCU11381	NCPWY:PWY-922	mevalonate pathway I
+NCU02287	NCPWY:FAO-PWY	fatty acid &beta;-oxidation I
+NCU02287	NCPWY:PWY-5136-1	PWY-5136-1
+NCU02366	NCPWY:FERMENTATION-PWY	mixed acid fermentation
+NCU02366	NCPWY:GLYOXYLATE-BYPASS	glyoxylate cycle
+NCU02366	NCPWY:PWY-5690	TCA cycle variation III (eukaryotic)
+NCU02274	NCPWY:1CMET2-PWY	formylTHF biosynthesis I
+NCU02274	NCPWY:GLYSYN-PWY	glycine biosynthesis I
+NCU02274	NCPWY:PWY-2161	folate polyglutamylation I
+NCU02274	NCPWY:PWY-2201	folate transformations
+NCU02274	NCPWY:PWY-3841	formylTHF biosynthesis II
+NCU02274	NCPWY:PWY-5497	purine degradation II (anaerobic)
+NCU02639	NCPWY:ARGSYNBSUB-PWY-1	ARGSYNBSUB-PWY-1
+NCU08998	NCPWY:GLUDEG-I-PWY	GLUDEG-I-PWY
+NCU08998	NCPWY:PWY-6535	PWY-6535
+NCU08998	NCPWY:PWY-6537	PWY-6537
+NCU00299	NCPWY:FAO-PWY	fatty acid &beta;-oxidation I
+NCU00843	NCPWY:FOLSYN-PWY	tetrahydrofolate biosynthesis
+NCU00843	NCPWY:PWY-6121	5-aminoimidazole ribonucleotide biosynthesis I
+NCU03761	NCPWY:PWY-5497	purine degradation II (anaerobic)
+NCU03761	NCPWY:SERDEG-PWY	L-serine degradation
+NCU03425	NCPWY:HOMOSER-THRESYN-PWY	threonine biosynthesis from homoserine
+NCU01754	NCPWY:FERMENTATION-PWY	mixed acid fermentation
+NCU01754	NCPWY:PWY-5057	valine degradation II
+NCU01754	NCPWY:PWY-5076	leucine degradation III
+NCU01754	NCPWY:PWY-5078	isoleucine degradation II
+NCU01754	NCPWY:PWY-5079	phenylalanine degradation III
+NCU01754	NCPWY:PWY-5081	tryptophan degradation VIII (to tryptophol)
+NCU01754	NCPWY:PWY-5082	methionine degradation III
+NCU01754	NCPWY:PWY-5486	pyruvate fermentation to ethanol II
+NCU01754	NCPWY:PWY2T-11	xylose conversion to ethanol
+NCU01754	NCPWY:PWY2T-1450	xylose fermentation
+NCU01754	NCPWY:PWY2T-9	cellulose conversion to ethanol
+NCU01754	NCPWY:PWY3O-4108-1	PWY3O-4108-1
+NCU01754	NCPWY:PWY66-21	oxidative ethanol degradation I
+NCU06348	NCPWY:PWY-2301	<i>myo</i>-inositol biosynthesis
+NCU05254	NCPWY:PWY0-662	PRPP biosynthesis I
+NCU02704	NCPWY:ILEUDEG-PWY	isoleucine degradation I
+NCU02704	NCPWY:PWY-5046	branched-chain &alpha;-keto acid dehydrogenase complex
+NCU02704	NCPWY:VALDEG-PWY	valine degradation I
+NCU08352	NCPWY:THIOREDOX-PWY	thioredoxin pathway
+NCU00087	NCPWY:OXIDATIVEPENT-PWY	OXIDATIVEPENT-PWY
+NCU00087	NCPWY:OXIDATIVEPENT-PWY-1	pentose phosphate pathway (oxidative branch)
+NCU00150	NCPWY:HISTSYN-PWY	histidine biosynthesis
+NCU01132	NCPWY:PWY2T-10	xylan degradation
+NCU01132	NCPWY:PWY2T-42	PWY2T-42
+NCU01132	NCPWY:PWY2T-7	cellulose degradation
+NCU04280	NCPWY:PWY0-42	2-methylcitrate cycle I
+NCU01744	NCPWY:GLUGLNSYN-PWY	glutamate biosynthesis IV
+NCU01744	NCPWY:PWY-5675-1	PWY-5675-1
+NCU05221	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU05221	NCPWY:PWY-4302	aerobic respiration -- electron donor III
+NCU05221	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU05221	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU05221	NCPWY:PWY2T-21	PWY2T-21
+NCU05221	NCPWY:PWY2T-2574	aerobic respiration
+NCU04355	NCPWY:PWY-6352	3-phosphoinositide biosynthesis
+NCU00056	NCPWY:PWY-5966	fatty acid biosynthesis initiation II
+NCU02136	NCPWY:NONOXIPENT-PWY	pentose phosphate pathway (non-oxidative branch)
+NCU02136	NCPWY:NONOXIPENT-PWY-1	pentose phosphate pathway (non-oxidative branch)
+NCU00809	NCPWY:PWY2T-10	xylan degradation
+NCU00809	NCPWY:PWY2T-42	PWY2T-42
+NCU00809	NCPWY:PWY2T-7	cellulose degradation
+NCU07456	NCPWY:PWY-6168	flavin biosynthesis III (eukaryotes)
+NCU00963	NCPWY:1CMET2-PWY	formylTHF biosynthesis I
+NCU00963	NCPWY:FOLSYN-PWY	tetrahydrofolate biosynthesis
+NCU00963	NCPWY:P164-PWY	purine degradation III (anaerobic)
+NCU00963	NCPWY:PWY-1722	formaldehyde oxidation V (tetrahydrofolate pathway)
+NCU00963	NCPWY:PWY-2201	folate transformations
+NCU00963	NCPWY:PWY-3841	formylTHF biosynthesis II
+NCU00963	NCPWY:PWY-5497	purine degradation II (anaerobic)
+NCU01528	NCPWY:GLUCONEO-PWY	gluconeogenesis I
+NCU01528	NCPWY:GLYCOLYSIS-1	glycolysis I
+NCU01528	NCPWY:PWY-5484	glycolysis II
+NCU01528	NCPWY:PWY2T-1450	xylose fermentation
+NCU03339	NCPWY:GLUT-REDOX-PWY	glutathione redox reactions II
+NCU16553	NCPWY:ASPARTATESYN-PWY	aspartate biosynthesis
+NCU16553	NCPWY:CYSTEINE-DEG-PWY	L-cysteine degradation I
+NCU16553	NCPWY:MALATE-ASPARTATE-SHUTTLE-PWY	aspartate degradation II
+NCU03463	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU03463	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU03463	NCPWY:PWY2T-2574	aerobic respiration
+NCU10045	NCPWY:PWY-1081	homogalacturonan degradation
+NCU05093	NCPWY:PWY-801	homocysteine and cysteine interconversion
+NCU05093	NCPWY:PWY2T-24	PWY2T-24
+NCU09864	NCPWY:ILEUDEG-PWY	isoleucine degradation I
+NCU09864	NCPWY:LEU-DEG2-PWY	leucine degradation I
+NCU09864	NCPWY:PWY-5046	branched-chain &alpha;-keto acid dehydrogenase complex
+NCU09864	NCPWY:VALDEG-PWY	valine degradation I
+NCU04077	NCPWY:SO4ASSIM-PWY	sulfate reduction I (assimilatory)
+NCU04077	NCPWY:SO4ASSIM-PWY-1	SO4ASSIM-PWY-1
+NCU09643	NCPWY:PWY-5667	CDP-diacylglycerol biosynthesis I
+NCU07307	NCPWY:PWY-5142	acyl-ACP thioesterase pathway
+NCU07307	NCPWY:PWY-5147	PWY-5147
+NCU07307	NCPWY:PWY-5366	palmitoleate biosynthesis II
+NCU07307	NCPWY:PWY-5966	fatty acid biosynthesis initiation II
+NCU07307	NCPWY:PWY-5970	fatty acids biosynthesis (yeast)
+NCU07307	NCPWY:PWY-5970-1	PWY-5970-1
+NCU07307	NCPWY:PWY-5972	PWY-5972
+NCU07307	NCPWY:PWY-5989	PWY-5989
+NCU07307	NCPWY:PWY-5994	palmitate biosynthesis I (animals)
+NCU07307	NCPWY:PWY-6012	acyl carrier protein metabolism
+NCU04251	NCPWY:PWY2T-19	PWY2T-19
+NCU01427	NCPWY:PWY-5120	geranylgeranyldiphosphate biosynthesis
+NCU04118	NCPWY:HOMOSERSYN-PWY	homoserine biosynthesis
+NCU00519	NCPWY:NONOXIPENT-PWY	pentose phosphate pathway (non-oxidative branch)
+NCU00519	NCPWY:NONOXIPENT-PWY-1	pentose phosphate pathway (non-oxidative branch)
+NCU02299	NCPWY:PWY3DJ-11470	sphingosine and sphingosine-1-phosphate metabolism
+NCU05805	NCPWY:1CMET2-PWY	formylTHF biosynthesis I
+NCU05805	NCPWY:GLYSYN-PWY	glycine biosynthesis I
+NCU05805	NCPWY:PWY-2161	folate polyglutamylation I
+NCU05805	NCPWY:PWY-2201	folate transformations
+NCU05805	NCPWY:PWY-3841	formylTHF biosynthesis II
+NCU05805	NCPWY:PWY-5497	purine degradation II (anaerobic)
+NCU03257	NCPWY:PWY-5986	ammonium transport
+NCU03199	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU03199	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU03199	NCPWY:PWY2T-2574	aerobic respiration
+NCU07941	NCPWY:ASPARTATESYN-PWY	aspartate biosynthesis
+NCU07941	NCPWY:CYSTEINE-DEG-PWY	L-cysteine degradation I
+NCU07941	NCPWY:MALATE-ASPARTATE-SHUTTLE-PWY	aspartate degradation II
+NCU06189	NCPWY:PWY-5189	tetrapyrrole biosynthesis II
+NCU02179	NCPWY:ALACAT2-PWY	alanine degradation II (to D-lactate)
+NCU02179	NCPWY:FERMENTATION-PWY	mixed acid fermentation
+NCU03913	NCPWY:ILEUDEG-PWY	isoleucine degradation I
+NCU03913	NCPWY:LEU-DEG2-PWY	leucine degradation I
+NCU03913	NCPWY:VALDEG-PWY	valine degradation I
+NCU03877	NCPWY:1CMET2-PWY	formylTHF biosynthesis I
+NCU03877	NCPWY:FOLSYN-PWY	tetrahydrofolate biosynthesis
+NCU03877	NCPWY:P164-PWY	purine degradation III (anaerobic)
+NCU03877	NCPWY:PWY-1722	formaldehyde oxidation V (tetrahydrofolate pathway)
+NCU03877	NCPWY:PWY-2161	folate polyglutamylation I
+NCU03877	NCPWY:PWY-2201	folate transformations
+NCU03877	NCPWY:PWY-3841	formylTHF biosynthesis II
+NCU03877	NCPWY:PWY-5497	purine degradation II (anaerobic)
+NCU07225	NCPWY:PWY2T-10	xylan degradation
+NCU04246	NCPWY:FOLSYN-PWY	tetrahydrofolate biosynthesis
+NCU04246	NCPWY:PWY-6543	PWY-6543
+NCU04292	NCPWY:ILEUDEG-PWY	isoleucine degradation I
+NCU04292	NCPWY:ILEUSYN-PWY	isoleucine biosynthesis I (from threonine)
+NCU04292	NCPWY:LEU-DEG2-PWY	leucine degradation I
+NCU04292	NCPWY:LEUSYN-PWY	leucine biosynthesis
+NCU04292	NCPWY:PWY-5057	valine degradation II
+NCU04292	NCPWY:PWY-5076	leucine degradation III
+NCU04292	NCPWY:PWY-5078	isoleucine degradation II
+NCU04292	NCPWY:VALDEG-PWY	valine degradation I
+NCU04292	NCPWY:VALSYN-PWY	valine biosynthesis
+NCU05816	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU05816	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU05816	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU05816	NCPWY:PWY2T-21	PWY2T-21
+NCU05816	NCPWY:PWY2T-2574	aerobic respiration
+NCU08152	NCPWY:PWY2T-7	cellulose degradation
+NCU05420	NCPWY:ARO-PWY	chorismate biosynthesis I
+NCU09183	NCPWY:PWY-5651	tryptophan degradation to 2-amino-3-carboxymuconate semialdehyde
+NCU09183	NCPWY:PWY-6309	tryptophan degradation XI (mammalian, via kynurenine)
+NCU00775	NCPWY:PWY-5690	TCA cycle variation III (eukaryotic)
+NCU04963	NCPWY:PWY2T-42	PWY2T-42
+NCU04963	NCPWY:PWY2T-7	cellulose degradation
+NCU06552	NCPWY:MANNOSYL-CHITO-DOLICHOL-BIOSYNTHESIS	dolichyl-diphosphooligosaccharide biosynthesis
+NCU07550	NCPWY:GLYCOLYSIS-1	glycolysis I
+NCU07550	NCPWY:PWY-5484	glycolysis II
+NCU07550	NCPWY:PWY2T-1450	xylose fermentation
+NCU03539	NCPWY:PWY-6126-1	PWY-6126-1
+NCU03539	NCPWY:PWY0-166	pyrimidine deoxyribonucleotides <i>de novo</i> biosynthesis
+NCU03504	NCPWY:PWY2T-23	PWY2T-23
+NCU03504	NCPWY:PWY3DJ-11470	sphingosine and sphingosine-1-phosphate metabolism
+NCU03504	NCPWY:SPHINGOLIPID-SYN-PWY	sphingolipid metabolism
+NCU05419	NCPWY:LEU-DEG2-PWY	leucine degradation I
+NCU04454	NCPWY:MANNOSYL-CHITO-DOLICHOL-BIOSYNTHESIS	dolichyl-diphosphooligosaccharide biosynthesis
+NCU05239	NCPWY:PWY2T-19	PWY2T-19
+NCU03633	NCPWY:PWY-922	mevalonate pathway I
+NCU04221	NCPWY:PWY0-1182	trehalose degradation II (trehalase)
+NCU11173	NCPWY:PWY3O-17	PWY3O-17
+NCU11173	NCPWY:THISYNARA-PWY	THISYNARA-PWY
+NCU00438	NCPWY:SALVADEHYPOX-PWY	salvage pathways of adenine, hypoxanthine, and their nucleosides
+NCU03328	NCPWY:PWY-6788	PWY-6788
+NCU03328	NCPWY:PWY2T-42	PWY2T-42
+NCU03328	NCPWY:PWY2T-7	cellulose degradation
+NCU03358	NCPWY:PWY-5458	methylglyoxal degradation V
+NCU08359	NCPWY:PWY0-163	salvage pathways of pyrimidine ribonucleotides
+NCU05526	NCPWY:LYSINE-AMINOAD-PWY	lysine biosynthesis IV
+NCU01004	NCPWY:PWY-5669	phosphatidylethanolamine biosynthesis I
+NCU04569	NCPWY:PWY-4041	&gamma;-glutamyl cycle
+NCU02234	NCPWY:PWY2T-39	PWY2T-39
+NCU05807	NCPWY:PYRIDNUCSAL-PWY	NAD salvage pathway I
+NCU03194	NCPWY:PWY-6124	inosine-5'-phosphate biosynthesis II
+NCU04952	NCPWY:PWY-6788	PWY-6788
+NCU04952	NCPWY:PWY2T-42	PWY2T-42
+NCU04952	NCPWY:PWY2T-7	cellulose degradation
+NCU09621	NCPWY:P164-PWY	purine degradation III (anaerobic)
+NCU09621	NCPWY:PWY-5497	purine degradation II (anaerobic)
+NCU09621	NCPWY:SALVPURINE2-PWY	salvage pathways of guanine, xanthine, and their nucleosides
+NCU09477	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU09477	NCPWY:PWY-4302	aerobic respiration -- electron donor III
+NCU09477	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU09477	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU09477	NCPWY:PWY2T-21	PWY2T-21
+NCU09477	NCPWY:PWY2T-2574	aerobic respiration
+NCU06924	NCPWY:PWY-5651	tryptophan degradation to 2-amino-3-carboxymuconate semialdehyde
+NCU06924	NCPWY:PWY-6309	tryptophan degradation XI (mammalian, via kynurenine)
+NCU03118	NCPWY:LYSINE-AMINOAD-PWY	lysine biosynthesis IV
+NCU08272	NCPWY:PWY-5458	methylglyoxal degradation V
+NCU06358	NCPWY:PWY2T-7	cellulose degradation
+NCU01227	NCPWY:PWY-5690	TCA cycle variation III (eukaryotic)
+NCU04265	NCPWY:PWY-621-1	PWY-621-1
+NCU06970	NCPWY:PWY0-662	PRPP biosynthesis I
+NCU08685	NCPWY:PWY-6121	5-aminoimidazole ribonucleotide biosynthesis I
+NCU08280	NCPWY:PWY-5670	epoxysqualene biosynthesis
+NCU07308	NCPWY:PWY-5142	acyl-ACP thioesterase pathway
+NCU07308	NCPWY:PWY-5147	PWY-5147
+NCU07308	NCPWY:PWY-5366	palmitoleate biosynthesis II
+NCU07308	NCPWY:PWY-5966	fatty acid biosynthesis initiation II
+NCU07308	NCPWY:PWY-5970	fatty acids biosynthesis (yeast)
+NCU07308	NCPWY:PWY-5970-1	PWY-5970-1
+NCU07308	NCPWY:PWY-5972	PWY-5972
+NCU07308	NCPWY:PWY-5989	PWY-5989
+NCU07308	NCPWY:PWY-5994	palmitate biosynthesis I (animals)
+NCU07308	NCPWY:PWY-6012	acyl carrier protein metabolism
+NCU07982	NCPWY:ILEUSYN-PWY	isoleucine biosynthesis I (from threonine)
+NCU07982	NCPWY:PWY-5939	acetoin biosynthesis II
+NCU07982	NCPWY:VALSYN-PWY	valine biosynthesis
+NCU03749	NCPWY:PWY-5386	methylglyoxal degradation I
+NCU07531	NCPWY:PWY-6137	copper transport II
+NCU02922	NCPWY:PWY-4101	sorbitol degradation I
+NCU16362	NCPWY:PWY-6196	serine racemization
+NCU04728	NCPWY:PWY-621-1	PWY-621-1
+NCU04728	NCPWY:PWY2T-19	PWY2T-19
+NCU01553	NCPWY:PWY-5870	ubiquinone-8 biosynthesis (eukaryotic)
+NCU01553	NCPWY:PWY-5872	ubiquinone-10 biosynthesis (eukaryotic)
+NCU01553	NCPWY:PWY3O-19	ubiquinone-6 biosynthesis (eukaryotic)
+NCU06003	NCPWY:PWY-5659	GDP-mannose biosynthesis
+NCU09646	NCPWY:FAO-PWY	fatty acid &beta;-oxidation I
+NCU09646	NCPWY:PWY-5136-1	PWY-5136-1
+NCU10400	NCPWY:LIPASYN-PWY	phospholipases
+NCU10400	NCPWY:PWY-3561	choline biosynthesis III
+NCU06460	NCPWY:PWY3O-17	PWY3O-17
+NCU06460	NCPWY:THISYNARA-PWY	THISYNARA-PWY
+NCU03880	NCPWY:PWY-3561	choline biosynthesis III
+NCU03880	NCPWY:PWY3O-450	phosphatidylcholine biosynthesis I
+NCU04350	NCPWY:PWY2T-19	PWY2T-19
+NCU07953	NCPWY:PWY-4302	aerobic respiration -- electron donor III
+NCU02325	NCPWY:PWY-841	purine nucleotides <i>de novo</i> biosynthesis II
+NCU02302	NCPWY:PWY-5669	phosphatidylethanolamine biosynthesis I
+NCU00135	NCPWY:PWY-5269	cardiolipin biosynthesis II
+NCU08924	NCPWY:FAO-PWY	fatty acid &beta;-oxidation I
+NCU08924	NCPWY:PWY-5136-1	PWY-5136-1
+NCU09703	NCPWY:PWY-5939	acetoin biosynthesis II
+NCU06779	NCPWY:MANNOSYL-CHITO-DOLICHOL-BIOSYNTHESIS	dolichyl-diphosphooligosaccharide biosynthesis
+NCU08719	NCPWY:PWY-5921	L-glutamine biosynthesis II (tRNA-dependent)
+NCU04237	NCPWY:COA-PWY	coenzyme A biosynthesis
+NCU09746	NCPWY:PWY-5354	molybdenum cofactor biosynthesis
+NCU04510	NCPWY:PWY-5515	L-arabinose degradation II
+NCU08269	NCPWY:PLPSAL-PWY	pyridoxal 5'-phosphate salvage pathway
+NCU06727	NCPWY:BSUBPOLYAMSYN-PWY	spermidine biosynthesis
+NCU07690	NCPWY:1CMET2-PWY	formylTHF biosynthesis I
+NCU07690	NCPWY:PWY-2201	folate transformations
+NCU07690	NCPWY:PWY-3841	formylTHF biosynthesis II
+NCU07690	NCPWY:PWY2T-24	PWY2T-24
+NCU06613	NCPWY:PWY-5986	ammonium transport
+NCU06606	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU06606	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU06606	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU06606	NCPWY:PWY2T-21	PWY2T-21
+NCU06606	NCPWY:PWY2T-2574	aerobic respiration
+NCU07930	NCPWY:METHIONINE-DEG1-PWY	methionine degradation I (to homocysteine)
+NCU07930	NCPWY:PWY-5041	<i>S</i>-adenosyl-L-methionine cycle II
+NCU07930	NCPWY:PWY2T-24	PWY2T-24
+NCU09747	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU09747	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU09747	NCPWY:PWY2T-2574	aerobic respiration
+NCU06666	NCPWY:PWY-2301	<i>myo</i>-inositol biosynthesis
+NCU11282	NCPWY:PWY-5667	CDP-diacylglycerol biosynthesis I
+NCU11282	NCPWY:TRIGLSYN-PWY	triacylglycerol biosynthesis
+NCU07697	NCPWY:PWY-5690	TCA cycle variation III (eukaryotic)
+NCU07022	NCPWY:PWY-4101	sorbitol degradation I
+NCU04277	NCPWY:HOMOSER-THRESYN-PWY	threonine biosynthesis from homoserine
+NCU07756	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU07756	NCPWY:PWY-4302	aerobic respiration -- electron donor III
+NCU07756	NCPWY:PWY-561	superpathway of glyoxylate cycle
+NCU07756	NCPWY:PWY-5690	TCA cycle variation III (eukaryotic)
+NCU02797	NCPWY:PWY-5067	glycogen biosynthesis II (from UDP-D-Glucose)
+NCU02797	NCPWY:PWY2T-19	PWY2T-19
+NCU11382	NCPWY:PWY-5404	betaxanthin biosynthesis (via dopaxanthin)
+NCU00602	NCPWY:PWY-5194	siroheme biosynthesis
+NCU00736	NCPWY:PWY-5354	molybdenum cofactor biosynthesis
+NCU06974	NCPWY:HISTSYN-PWY	histidine biosynthesis
+NCU04449	NCPWY:TRNA-CHARGING-PWY-1	TRNA-CHARGING-PWY-1
+NCU01666	NCPWY:ILEUSYN-PWY	isoleucine biosynthesis I (from threonine)
+NCU01666	NCPWY:PWY-5939	acetoin biosynthesis II
+NCU01666	NCPWY:VALSYN-PWY	valine biosynthesis
+NCU06695	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU06695	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU06695	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU06695	NCPWY:PWY2T-21	PWY2T-21
+NCU06695	NCPWY:PWY2T-2574	aerobic respiration
+NCU07188	NCPWY:PWY-6168	flavin biosynthesis III (eukaryotes)
+NCU02571	NCPWY:ILEUDEG-PWY	isoleucine degradation I
+NCU02571	NCPWY:P163-PWY	P163-PWY
+NCU02571	NCPWY:PWY-5177	glutaryl-CoA degradation
+NCU02571	NCPWY:PWY-922	mevalonate pathway I
+NCU06402	NCPWY:PWY-6074	zymosterol biosynthesis
+NCU00670	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU00670	NCPWY:PWY-4302	aerobic respiration -- electron donor III
+NCU00670	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU00670	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU00670	NCPWY:PWY2T-21	PWY2T-21
+NCU00670	NCPWY:PWY2T-2574	aerobic respiration
+NCU00892	NCPWY:PWY-2161	folate polyglutamylation I
+NCU00892	NCPWY:PWY2T-24	PWY2T-24
+NCU09873	NCPWY:FERMENTATION-PWY	mixed acid fermentation
+NCU09873	NCPWY:GLUCONEO-PWY	gluconeogenesis I
+NCU09873	NCPWY:PWY-561	superpathway of glyoxylate cycle
+NCU07130	NCPWY:PWY2T-10	xylan degradation
+NCU04098	NCPWY:GLUT-REDOX-PWY	glutathione redox reactions II
+NCU04098	NCPWY:PWY-6126-1	PWY-6126-1
+NCU04098	NCPWY:PWY0-166	pyrimidine deoxyribonucleotides <i>de novo</i> biosynthesis
+NCU04098	NCPWY:PWY2T-25	PWY2T-25
+NCU00712	NCPWY:PWY-922	mevalonate pathway I
+NCU02475	NCPWY:1CMET2-PWY	formylTHF biosynthesis I
+NCU02475	NCPWY:GLYCLEAV-PWY	glycine cleavage complex
+NCU02475	NCPWY:PWY-2201	folate transformations
+NCU02475	NCPWY:PWY-3841	formylTHF biosynthesis II
+NCU02475	NCPWY:PWY2T-24	PWY2T-24
+NCU07143	NCPWY:OXIDATIVEPENT-PWY	OXIDATIVEPENT-PWY
+NCU07143	NCPWY:OXIDATIVEPENT-PWY-1	pentose phosphate pathway (oxidative branch)
+NCU05014	NCPWY:PWY3O-17	PWY3O-17
+NCU05014	NCPWY:THISYNARA-PWY	THISYNARA-PWY
+NCU04754	NCPWY:PWY-5057	valine degradation II
+NCU04754	NCPWY:VALDEG-PWY	valine degradation I
+NCU04754	NCPWY:VALSYN-PWY	valine biosynthesis
+NCU08409	NCPWY:TRPSYN-PWY	tryptophan biosynthesis
+NCU03295	NCPWY:PWY-5754	4-hydroxybenzoate biosynthesis I (eukaryotes)
+NCU05537	NCPWY:TYRFUMCAT-PWY	tyrosine degradation I
+NCU05008	NCPWY:PWY-5142	acyl-ACP thioesterase pathway
+NCU05008	NCPWY:PWY-5147	PWY-5147
+NCU05008	NCPWY:PWY-5366	palmitoleate biosynthesis II
+NCU05008	NCPWY:PWY-5966	fatty acid biosynthesis initiation II
+NCU05008	NCPWY:PWY-5989	PWY-5989
+NCU05008	NCPWY:PWY-5994	palmitate biosynthesis I (animals)
+NCU05008	NCPWY:PWY-6012	acyl carrier protein metabolism
+NCU04796	NCPWY:FAO-PWY	fatty acid &beta;-oxidation I
+NCU04796	NCPWY:PWY-5136-1	PWY-5136-1
+NCU03381	NCPWY:PWY-5667	CDP-diacylglycerol biosynthesis I
+NCU01757	NCPWY:ASPARAGINE-DEG1-PWY	asparagine degradation I
+NCU00943	NCPWY:PWY0-1182	trehalose degradation II (trehalase)
+NCU05983	NCPWY:PWY-6168	flavin biosynthesis III (eukaryotes)
+NCU05731	NCPWY:P164-PWY	purine degradation III (anaerobic)
+NCU05731	NCPWY:PWY-6126-1	PWY-6126-1
+NCU05731	NCPWY:PWY0-166	pyrimidine deoxyribonucleotides <i>de novo</i> biosynthesis
+NCU05731	NCPWY:PWY2T-25	PWY2T-25
+NCU05731	NCPWY:SO4ASSIM-PWY	sulfate reduction I (assimilatory)
+NCU05731	NCPWY:SO4ASSIM-PWY-1	SO4ASSIM-PWY-1
+NCU05731	NCPWY:THIOREDOX-PWY	thioredoxin pathway
+NCU00160	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU00160	NCPWY:PWY-4302	aerobic respiration -- electron donor III
+NCU00160	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU00160	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU00160	NCPWY:PWY2T-21	PWY2T-21
+NCU00160	NCPWY:PWY2T-2574	aerobic respiration
+NCU12050	NCPWY:PWY-6126-1	PWY-6126-1
+NCU01813	NCPWY:PWY2T-7	cellulose degradation
+NCU01013	NCPWY:PWY-5189	tetrapyrrole biosynthesis II
+NCU03176	NCPWY:PWY3O-450	phosphatidylcholine biosynthesis I
+NCU08375	NCPWY:PWY-5354	molybdenum cofactor biosynthesis
+NCU09930	NCPWY:FOLSYN-PWY	tetrahydrofolate biosynthesis
+NCU09930	NCPWY:PWY-6147	6-hydroxymethyl-dihydropterin diphosphate biosynthesis
+NCU09652	NCPWY:PWY2T-10	xylan degradation
+NCU08005	NCPWY:PWY2T-21	PWY2T-21
+NCU04481	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU04481	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU04481	NCPWY:PWY2T-2574	aerobic respiration
+NCU04385	NCPWY:LEUSYN-PWY	leucine biosynthesis
+NCU04473	NCPWY:PWY2T-42	PWY2T-42
+NCU02252	NCPWY:GLUCONEO-PWY	gluconeogenesis I
+NCU02252	NCPWY:GLYCOLYSIS-1	glycolysis I
+NCU02252	NCPWY:PWY-5484	glycolysis II
+NCU02252	NCPWY:PWY2T-1450	xylose fermentation
+NCU02381	NCPWY:PWY-5669	phosphatidylethanolamine biosynthesis I
+NCU05430	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU05430	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU05430	NCPWY:PWY2T-2574	aerobic respiration
+NCU07760	NCPWY:PWY-6788	PWY-6788
+NCU07760	NCPWY:PWY2T-42	PWY2T-42
+NCU07760	NCPWY:PWY2T-7	cellulose degradation
+NCU00552	NCPWY:PWY-5942	PWY-5942
+NCU00552	NCPWY:PWY-6287	PWY-6287
+NCU00552	NCPWY:PWY-6681	PWY-6681
+NCU10106	NCPWY:GLYCOLYSIS-1	glycolysis I
+NCU10106	NCPWY:PWY-5484	glycolysis II
+NCU10106	NCPWY:PWY2T-1450	xylose fermentation
+NCU05238	NCPWY:SO4ASSIM-PWY	sulfate reduction I (assimilatory)
+NCU05238	NCPWY:SO4ASSIM-PWY-1	SO4ASSIM-PWY-1
+NCU01271	NCPWY:PWY-46	putrescine biosynthesis III
+NCU07737	NCPWY:PWY-6183	salicylate degradation I
+NCU09553	NCPWY:PWY-5177	glutaryl-CoA degradation
+NCU00656	NCPWY:PWY-6352	3-phosphoinositide biosynthesis
+NCU02550	NCPWY:PWY0-1301	melibiose degradation
+NCU07914	NCPWY:GLUCONEO-PWY	gluconeogenesis I
+NCU07914	NCPWY:GLYCOLYSIS-1	glycolysis I
+NCU07914	NCPWY:PWY-5484	glycolysis II
+NCU07914	NCPWY:PWY2T-1450	xylose fermentation
+NCU00642	NCPWY:BGALACT-PWY	lactose degradation III
+NCU10220	NCPWY:PWY-6126-1	PWY-6126-1
+NCU03608	NCPWY:ILEUSYN-PWY	isoleucine biosynthesis I (from threonine)
+NCU03608	NCPWY:VALSYN-PWY	valine biosynthesis
+NCU02663	NCPWY:P163-PWY	P163-PWY
+NCU05290	NCPWY:PWY-5686	uridine-5'-phosphate biosynthesis
+NCU00713	NCPWY:PYRIDNUCSAL-PWY	NAD salvage pathway I
+NCU03127	NCPWY:PWY-5704	urea degradation II
+NCU09233	NCPWY:PWY-6168	flavin biosynthesis III (eukaryotes)
+NCU05098	NCPWY:PWY-5669	phosphatidylethanolamine biosynthesis I
+NCU06698	NCPWY:PWY-5067	glycogen biosynthesis II (from UDP-D-Glucose)
+NCU03753	NCPWY:PWY2T-41	PWY2T-41
+NCU10008	NCPWY:FERMENTATION-PWY	mixed acid fermentation
+NCU10008	NCPWY:PWY-561	superpathway of glyoxylate cycle
+NCU10008	NCPWY:PWY-5690	TCA cycle variation III (eukaryotic)
+NCU08384	NCPWY:PWY-5516	PWY-5516
+NCU08384	NCPWY:PWY-5516-1	xylose degradation II
+NCU09264	NCPWY:PWY-4361	PWY-4361
+NCU04044	NCPWY:PWY-3781	aerobic respiration -- electron donor II
+NCU04044	NCPWY:PWY-4302	aerobic respiration -- electron donor III
+NCU04044	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU04044	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU04044	NCPWY:PWY2T-21	PWY2T-21
+NCU04044	NCPWY:PWY2T-2574	aerobic respiration
+NCU03695	NCPWY:PWY-5669	phosphatidylethanolamine biosynthesis I
+NCU05425	NCPWY:PWY-5084	2-ketoglutarate dehydrogenase complex
+NCU05425	NCPWY:PWY-5690	TCA cycle variation III (eukaryotic)
+NCU00649	NCPWY:PYRIDNUCSAL-PWY	NAD salvage pathway I
+NCU03216	NCPWY:PWY-6126-1	PWY-6126-1
+NCU09371	NCPWY:PWY-6168	flavin biosynthesis III (eukaryotes)
+NCU02010	NCPWY:LEUSYN-PWY	leucine biosynthesis
+NCU07966	NCPWY:PWY-6166	calcium transport I
+NCU04944	NCPWY:PWY3O-17	PWY3O-17
+NCU04944	NCPWY:THISYNARA-PWY	THISYNARA-PWY
+NCU07916	NCPWY:PWY-5418	phenol degradation I (aerobic)
+NCU05627	NCPWY:PWY2T-7	cellulose degradation
+NCU10468	NCPWY:ARGSYNBSUB-PWY-1	ARGSYNBSUB-PWY-1
+NCU06785	NCPWY:PWY-5172	acetyl-CoA biosynthesis (from citrate)
+NCU01562	NCPWY:PWY-6085	2,4-dichlorophenoxyacetate degradation
+NCU01830	NCPWY:TYRFUMCAT-PWY	tyrosine degradation I
+NCU08828	NCPWY:FAO-PWY	fatty acid &beta;-oxidation I
+NCU08828	NCPWY:PWY-5136-1	PWY-5136-1
+NCU08828	NCPWY:PWY-5177	glutaryl-CoA degradation
+NCU08002	NCPWY:PWY-6111-1	PWY-6111-1
+NCU07027	NCPWY:GLYCOCAT-PWY	glycogen degradation I
+NCU07027	NCPWY:PWY-5941	glycogen degradation II
+NCU07027	NCPWY:PWY-5941-1	PWY-5941-1
+NCU07472	NCPWY:MANNOSYL-CHITO-DOLICHOL-BIOSYNTHESIS	dolichyl-diphosphooligosaccharide biosynthesis
+NCU08898	NCPWY:LYSINE-AMINOAD-PWY	lysine biosynthesis IV
+NCU09705	NCPWY:PWY-6317	PWY-6317
+NCU07682	NCPWY:ARGSYNBSUB-PWY-1	ARGSYNBSUB-PWY-1
+NCU07682	NCPWY:GLUTORN-PWY	ornithine biosynthesis
+NCU06687	NCPWY:PWY-5067	glycogen biosynthesis II (from UDP-D-Glucose)
+NCU02536	NCPWY:PWY3O-19	ubiquinone-6 biosynthesis (eukaryotic)
+NCU00837	NCPWY:OXIDATIVEPENT-PWY	OXIDATIVEPENT-PWY
+NCU00837	NCPWY:OXIDATIVEPENT-PWY-1	pentose phosphate pathway (oxidative branch)
+NCU02998	NCPWY:PWY-5653	PWY-5653
+NCU02333	NCPWY:ARG-PRO-PWY	arginine degradation VI (arginase 2 pathway)
+NCU09119	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU09119	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU09119	NCPWY:PWY2T-2574	aerobic respiration
+NCU03350	NCPWY:P164-PWY	purine degradation III (anaerobic)
+NCU03350	NCPWY:PWY-5497	purine degradation II (anaerobic)
+NCU03350	NCPWY:SALVADEHYPOX-PWY	salvage pathways of adenine, hypoxanthine, and their nucleosides
+NCU05410	NCPWY:ARGSYNBSUB-PWY-1	ARGSYNBSUB-PWY-1
+NCU05410	NCPWY:GLUTORN-PWY	ornithine biosynthesis
+NCU08516	NCPWY:PWY-6317	PWY-6317
+NCU06803	NCPWY:GLUDEG-I-PWY	GLUDEG-I-PWY
+NCU08515	NCPWY:PWY2T-14	aerobic xylose fermentation
+NCU08515	NCPWY:PWY2T-15	aerobic xylose fermentation
+NCU08515	NCPWY:PWY2T-2574	aerobic respiration
+NCU01439	NCPWY:SERSYN-PWY	serine biosynthesis
+NCU03098	NCPWY:PWY-5767	glycogen degradation III
+NCU02482	NCPWY:FERMENTATION-PWY	mixed acid fermentation
+NCU02482	NCPWY:GLYOXYLATE-BYPASS	glyoxylate cycle
+NCU02482	NCPWY:PWY-5690	TCA cycle variation III (eukaryotic)
+NCU02482	NCPWY:PWY0-42	2-methylcitrate cycle I
+NCU04474	NCPWY:PWY-5326	sulfite oxidation IV
+NCU05046	NCPWY:PWY-6166	calcium transport I
+NCU03788	NCPWY:CYSTSYN-PWY	CYSTSYN-PWY
+NCU03788	NCPWY:PWY2T-24	PWY2T-24
+NCU06549	NCPWY:PWY-6466	PWY-6466
+NCU11196	NCPWY:ILEUDEG-PWY	isoleucine degradation I
+NCU00591	NCPWY:LEU-DEG2-PWY	leucine degradation I

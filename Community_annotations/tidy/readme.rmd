@@ -1,0 +1,197 @@
+---
+title: "Neurospora Broad Community Annotation Project Files"
+output: html_document
+---
+
+Parsed files from the Broad *Neurospora crassa* Community Annotation Project
+
+Original [Broad raw data dump](http://fungalgenomes.org/public/neurospora/data/Broad_dump/Dump_2014_02.tar.gz)
+
+### Combined GO annotation and publication files, for loading into FungiDB
+#### broad_nc_cap_fungidb_goterms.gaf
+GO term annotations extracted from citations.json and comm_annotations.json files (raw data dumps from Broad). GO annotation file (GAF)
+
+#### broad_nc_cap_fungidb_publications.tsv
+Publication references extracted from citations.json comm_annotations.json files not indexed by PubMed (raw data dumps from Broad)
+
+* geneid: geneIDs (version 7)
+* pubmedid: PubMedID references (NA)
+* annotationmethod: method used to generate the annotation. Ex: Manual (manual curation), Automatic (text mining)
+* annotationsource: source of the annotation. Ex: effort, database, group
+
+### Gene Ontology Annotation Files (GAF)
+Description of [GAF format](http://geneontology.org/page/go-annotation-file-gaf-format-21)
+
+#### broad_nc_citations_gofuncat.gaf
+GO annotation file (GAF) with GO term annotations mapped from the Functional Catalogue annotations extracted from citations.json file (Raw data dump from Broad). 
+
+#### broad_nc_citations_goterms.gaf
+GO term annotations extracted from citations.json file (Raw data dump from Broad). GO annotation file (GAF) 
+
+#### broad_nc_comm_annotations_goterms.gaf
+GO term annotations extracted from comm_annotations.json file (Raw data dump from Broad). GO annotation file (GAF) 
+
+### Gene ID mapping files
+Gene ID mappings between version 7 and previous versions, different formats. The file easier for mapping is _broad_nc_geneid_mappings_all_one_column.tsv_
+
+#### broad_nc_geneid_mappings_all_one_column.tsv
+*Neurospora crassa* gene ID mappings between version 7 and previous versions, one entry per row
+
+* geneid: geneIDs (version 7)
+* geneidv: geneIDs from previous versions (versions 1 to 5)
+
+#### broad_nc_geneid_mappings_all.tsv
+*Neurospora crassa* gene ID mappings between version 7 and previous versions, each version in a different column
+
+* geneid: geneIDs (version 7)
+* geneidv1: geneIDs (version 1)
+* geneidv2: geneIDs (version 2)
+* geneidv3: geneIDs (version 3)
+* geneidv4: geneIDs (version 4)
+* geneidv5: geneIDs (version 5)
+
+#### broad_nc_geneid_mappings_v1.tsv
+*Neurospora crassa* gene ID mappings between version 7 and version 1
+
+* geneid: geneIDs (version 7)
+* geneidv1: geneIDs (version 1)
+
+#### broad_nc_geneid_mappings_v2.tsv
+*Neurospora crassa* gene ID mappings between version 7 and version 2
+
+* geneid: geneIDs (version 7)
+* geneidv2: geneIDs (version 2)
+
+#### broad_nc_geneid_mappings_v3.tsv
+*Neurospora crassa* gene ID mappings between version 7 and version 3
+
+* geneid: geneIDs (version 7)
+* geneidv3: geneIDs (version 3)
+
+#### broad_nc_geneid_mappings_v4.tsv
+*Neurospora crassa* gene ID mappings between version 7 and version 4
+
+* geneid: geneIDs (version 7)
+* geneidv4: geneIDs (version 4)
+
+#### broad_nc_geneid_mappings_v5.tsv
+*Neurospora crassa* gene ID mappings between version 7 and version 5
+
+* geneid: geneIDs (version 7)
+* geneidv5: geneIDs (version 5)
+
+### Files extracted from _citations.json_ file
+#### citations_ec_numbers.tsv:
+EC number annotations extracted from citations.json file (Raw data dump from Broad)
+
+* geneid: geneIDs (version 7)
+* ecnumber: E.C. number
+
+#### citations_funcat_go_mappings.tsv
+GO term annotations mapped from the [Functional Catalogue](http://www.helmholtz-muenchen.de/ibis/resourcesservices/services/funcat-the-functional-catalogue/index.html) annotations extracted from citations.json file (Raw data dump from Broad)
+
+* geneid: geneIDs (version 7)
+* funcatid: Functional Catalogue term ID
+* gotermid: GO term ID
+* pubmedid: PubMedID references
+
+#### citations_funcat_nogo_mappings.tsv
+[Functional Catalogue](http://www.helmholtz-muenchen.de/ibis/resourcesservices/services/funcat-the-functional-catalogue/index.html) annotations with no mappings to Gene Ontology. Functional Catalogue annotations extracted from citations.json file (Raw data dump from Broad)
+
+* geneid: geneIDs (version 7)
+* funcatid: Functional Catalogue term ID
+* gotermid: NA (no mappings)
+* pubmedid: PubMedID references
+
+#### citations_funcat.tsv
+[Functional Catalogue](http://www.helmholtz-muenchen.de/ibis/resourcesservices/services/funcat-the-functional-catalogue/index.html) annotations extracted from citations.json file (Raw data dump from Broad)
+
+* geneid: geneIDs (version 7)
+* funcatid: Functional Catalogue term ID
+* funcattermname: Functional Catalogue term name
+* pubmedid: PubMedID references (Functional Catalogue publication)
+* evidencecode: GO term evidence codes
+
+#### citations_goterms.tsv:
+GO term annotations extracted from citations.json file (Raw data dump from Broad)
+
+* geneid: geneIDs (version 7)
+* evidencecode: GO term evidence codes
+* gene: PubMedID references
+* publication: List of authors and title of the publication
+* termid: GO term ID
+* termname: GO term name
+* termnamespace: GO term aspect ('C': Cellular component, 'P': Biological process, 'F': Biological function)
+
+#### citations_nc_pathways.tsv
+*Neurospora crassa* pathways annotations extracted from citations.json file (Raw data dump from Broad). Pathways and reactions are defined by FungiCyc
+
+* geneid: geneIDs (version 7)
+* pathwayid: pathway ID from FungiCyc
+* pathwayname: pathway name from FungiCyc
+
+#### citations_nc_reactions.tsv
+*Neurospora crassa* reactions annotations extracted from citations.json file (Raw data dump from Broad). Pathways and reactions are defined by FungiCyc
+
+* geneid: geneIDs (version 7)
+* reactionname: reaction name from FungiCyc
+* ecnumber: E.C. number
+
+#### citations_publications.tsv: 
+Publication references extracted from citations.json file (Raw data dump from Broad)
+
+* geneid: geneIDs (version 7)
+* pubmedid: PubMedID references
+* publication: List of authors and title of the publication
+* annotationsource: source of the annotation. Ex: effort, database, group
+* annotationmethod: method used to generate the annotation. Ex: Manual (manual curation), Automatic (text mining)
+
+#### citations_publications_nopubmedid.tsv
+Publication references extracted from citations.json file not indexed by PubMed (Raw data dump from Broad)
+
+* geneid: geneIDs (version 7)
+* pubmedid: PubMedID references (NA)
+* publication: List of authors and title of the publication
+* annotationsource: source of the annotation. Ex: effort, database, group
+* annotationmethod: method used to generate the annotation. Ex: Manual (manual curation), Automatic (text mining)
+
+### Files extracted from _comm_annotation.json_ file
+#### comm_annotations_fungal_anatomy_ontology.tsv
+[Fungal Anatomy Ontology](http://www.obofoundry.org/ontology/fao.html) annotations extracted from comm_annotation.json file (Raw data dump from Broad)
+
+* geneid: geneIDs (version 7)
+* faoid: Functional Catalogue term ID
+* faottermname: Functional Catalogue term name
+* pubmedid: PubMedID references (Functional Catalogue publication)
+* evidencecode: GO term evidence codes
+
+#### comm_annotations_publications.tsv: 
+Publication references extracted from comm_annotations.json file (Raw data dump from Broad)
+
+* geneid: geneIDs (version 7)
+* pubmedid: PubMedID references
+* publication: List of authors and title of the publication
+* annotationsource: source of the annotation. Ex: effort, database, group
+* annotationmethod: method used to generate the annotation. Ex: Manual (manual curation), Automatic (text mining)
+
+#### comm_annotations_publications_nopubmedid.tsv
+Publication references extracted from comm_annotations.json file not indexed by PubMed (Raw data dump from Broad)
+
+* geneid: geneIDs (version 7)
+* pubmedid: PubMedID references (NA)
+* publication: List of authors and title of the publication
+* annotationsource: source of the annotation. Ex: effort, database, group
+* annotationmethod: method used to generate the annotation. Ex: Manual (manual curation), Automatic (text mining)
+
+### Other files
+#### funcat_to_go_mappings_schema2.1.tsv
+Mappings between [Functional Catalogue](http://www.helmholtz-muenchen.de/ibis/resourcesservices/services/funcat-the-functional-catalogue/index.html) (schema 2.1) ontology and Gene Ontology
+
+* funcatid: Functional Catalogue term ID
+* gotermid: GO term ID
+
+#### funcat2.0_to_funcat2.1_mappings.tsv
+Mappings between Functiona Catalogue schema 2.0 and schema 2.1
+
+* termid1: Functional Catalogue term IDs in schema 2.0
+* termid2: Functional Catalogue term IDs in schema 2.1 

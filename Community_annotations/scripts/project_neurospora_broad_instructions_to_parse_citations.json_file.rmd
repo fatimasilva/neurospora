@@ -1,0 +1,420 @@
+---
+title: "Neurospora Broad Community Annotation Project: citations.json"
+output: html_document
+---
+
+Parse the Broad Community Annotation Project dumps to tab files for easy loading into FungiDB
+
+All gene IDs correspond to version 7 
+
+### Load dataset into R
+#### Set working directory
+```{r, eval=FALSE}
+setwd("~/Working/fungidb/fungidb_current/Project_Neurospora_Broad/")
+```
+
+#### Download file citations.json
+Source: Data dumps from Broad (201402) archived by Jason Stajich 
+```{r, eval=FALSE}
+# Create data folder
+if (!file.exists("data")) {
+  dir.create("data")
+}
+### Download files
+fileUrl <- "https://github.com/fungidb/neurospora/blob/master/Community_annotations/curator_raw/Broad_2014_02/citations.json.gz"
+download.file(fileUrl, destfile = "./data/citations.json.gz", method = "curl" )
+```
+
+#### Parse _citations.json_ to valid json format
+This json file (citations.json) does not validate (multiple errors). It needs fixing before loading into R. Validated using [JSON validator](http://jsonformatter.org/) 
+
+Use the script below to:
+
+* remove 'data =' in the first line and the ',' in the next-to-last line 
+* change all the single quotes (') in the key names for double quotes (")
+* Replace unquoted None (: None) by double quoted None (: "None")
+* Remove the bell character present in one of the lines.
+
+Script to parse the json file to a valid json format:
+```{r, eval=FALSE}
+arg1 <- "-a ./data/citations.json"
+arg2 <- "-o citations"
+cmd <- paste("perl", "./scripts/parse_broad_dumps_to_validated_json.pl", arg1, arg2)
+system(cmd) 
+```
+
+#### Read json file:
+```{r, eval=FALSE}
+# Read json data
+library(jsonlite)
+library(tidyr)
+library(dplyr)
+citations <- fromJSON("./data/citations_parsed.json")
+
+# Unnest the citation column. 
+# The citation column has nested information. Entries contain a list with multiple dataframes as elements
+citations.wide <- unnest(citations)
+# Change column names
+names(citations.wide) <- c("srcgrp","geneid","evidencecode","pubmedid",
+                                     "publication","termid","termname","termnamespace"
+                                     ,"termontology","toolevidence")
+```
+
+### Types of annotations included in _citations.json_
+Filtering by "termontology", there are 5 types of annotations:
+
+* NC Pathway
+* NC Reaction
+* Functional Catalogue
+* Gene Ontology
+* None (Publications)
+
+```{r, eval = FALSE}
+unique(citations.wide$termontology)
+```
+
+### 1. NC Pathway and NC Reaction Annotations 
+We only need the EC numbers for loading into FungiDB. The pathways and reactions will be assigned in FungiDB according to EC number:FungiCyc mappings. 
+
+Filter NC Pathway and NC Reaction annotations to tab files for reference. Notes:
+* There are reactions with no EC number (transporters).
+* There is a reference number in the publication field, it is another geneid from Broad. Confirmed that they correspond to version 7 IDs.
+
+```{r, eval=FALSE}
+# Filter NC Pathway annotations and write to file
+citations.pathway <- citations.wide[citations.wide$termontology == "NC Pathway", 
+                                    c("geneid","termid","termname") ]
+names(citations.pathway) <- c("geneid","pathwayid","pathwayname")
+write.table(citations.pathway, file = "./tidy/citations_nc_pathways.tsv", quote = FALSE, sep = "\t", row.names = FALSE)
+# Filter NC Reaction annotations and write to file
+citations.reaction <- citations.wide[citations.wide$termontology == "NC Reaction", 
+                                     c("geneid","termid","termname") ]
+names(citations.reaction) <- c("geneid","reactionname","ecnumber")
+citations.reaction$ecnumber <- gsub("# ", ":", citations.reaction$ecnumber, fixed = TRUE)
+write.table(citations.reaction, file = "./tidy/citations_nc_reactions.tsv", quote = FALSE, 
+            sep = "\t", row.names = FALSE)
+```
+
+Filter EC numbers for loading, one row per geneid:ec_number pair
+
+```{r, eval = FALSE}
+withecnumber <- which(grepl("^EC:", citations.reaction$ecnumber, perl = TRUE))
+citations.ecnumbers <- citations.reaction[withecnumber, c("geneid","ecnumber")] 
+# Remove duplicates (2150/3638)
+citations.ecnumbers <- unique(citations.ecnumbers)
+write.table(citations.ecnumbers, file = "./tidy/citations_ec_numbers.tsv", quote = FALSE, 
+            sep = "\t", row.names = FALSE)
+```
+
+### 2. Functional Catalogue Annotations
+Annotations based on the Functional Catalogue (FunCat). No evidences provided, are they manual or automatic annotations? => Seem automatic from MIPS
+
+They could be loaded as annotator notes or mapped to GO terms and loaded (there is a mapping file available at GOC).
+
+FunCat annotations from NC12 are in schema 2.1. The mapping file funcat2go uses schema 2.0. GO mappings have to be updated to schema 2.1 before parsing the GO terms.
+
+Parse FunCat annotations to tab file
+```{r, eval = FALSE}
+# Filter FunCat annotations (12040)
+citations.funcat <- citations.wide[citations.wide$termontology == "Functional Catalogue", c("geneid","termid","termname")]
+names(citations.funcat) <- c("geneid", "funcatid","funcattermname")
+## Remove genes with no assigned category (11710)[330]
+citations.funcat <- citations.funcat[citations.funcat$funcattermname != "CLASSIFICATION NOT YET CLEAR-CUT",]
+## Remove duplicated rows (5818)
+citations.funcat <- unique(citations.funcat)
+# Add publication reference and evidence code (automatic)
+citations.funcat$pubmedid <- rep("PMID:15486203", length(citations.funcat$geneid))
+citations.funcat$evidencecode <- rep("IEA", length(citations.funcat$geneid))
+## Order by geneid and write to file
+citations.funcat <- citations.funcat[order(citations.funcat$geneid),]
+write.table(citations.funcat, "./tidy/citations_funcat.tsv", quote = FALSE, sep = "\t", row.names = FALSE)
+```
+
+Map FunCat annotations to GO terms
+```{r, eval = FALSE} 
+## Download FunCat to GO terms mappings
+fileUrl <- "http://geneontology.org/external2go/mips2go"
+download.file(fileUrl, destfile = "./data/mips2go_mappings.txt", method = "curl")
+
+## Load funcat2go mappings, some terms do not have mapping to GO terms, add "NA" (fill and na.strings) (1433)
+funcat2go <- read.table("./data/mips2go_mappings.txt", header = FALSE, sep = ";",
+                        skip = 10, quote = "", colClasses = c("character", "character"), 
+                        fill = TRUE, col.names = c("funcatid","gotermid"), na.strings=c("","NA"))
+## Remove extra information from the funcat id term column, the termid is enough for mapping
+funcat2go$funcatid <- gsub("MIPS_funcat:(.+?)\\s.+$","\\1",funcat2go$funcatid, perl = TRUE)
+
+## Parse GO mappings to schema 2.1
+### Load schema 2.0 to 2.1 mappings (1501)
+fileUrl2 <- "ftp://ftpmips.gsf.de/fungi/1_FunCat_scheme/MappingFunCat2.0_2.1.txt"
+download.file(fileUrl2, "./data/MappingFunCat2.0_2.1.txt", method = "curl")
+funcat20to21 <- read.table("./data/MappingFunCat2.0_2.1.txt", skip = 3, header = FALSE, 
+                             sep = ">", fill = TRUE, na.strings=c("","NA"), 
+                             col.names = c("termid1", "termid2"), 
+                             colClasses = c("character","character"))
+### Remove extra information from the first column (keys), the termid is enough for mapping
+funcat20to21$termid1 <- gsub("^(.+?)\\s.+$","\\1", funcat20to21$termid1, perl = TRUE)
+
+### Fill second column for terms with no changes in id
+    # Example with changes "01.02.01.0" > "01.02.02.01
+    # Example with no changes: "01.01.03.01"
+
+for (i in 1:length(funcat20to21$termid1)){
+    if( is.na(funcat20to21$termid2[i])){
+        funcat20to21$termid2[[i]] <- funcat20to21$termid1[[i]]
+    }
+}
+
+write.table(funcat20to21, "./tidy/funcat2.0_to_funcat2.1_mappings.tsv", quote = FALSE, sep = "\t", row.names = FALSE)
+
+### Transform to data.tables for easy mapping
+funcat20to21.table <- data.table(funcat20to21) # mappings 2.0 to 2.1
+funcat2go.table <- data.table(funcat2go) # mappings FunCat 2.0 to GO terms
+setkey(funcat2go.table, funcatid)
+setkey(funcat20to21.table, termid1)
+
+### Update GO term mappings to FunCat 2.1 (1433)
+funcat2go.table[funcat20to21.table, funcatid := i.termid2]
+
+### Remove NAs and duplicates (for FunCat terms with multiple GO values only the first 
+    # GO term will be stored, usually the most general (!00 check))
+funcat2go.table <- na.omit(funcat2go.table) # (966)
+funcat2go.table <- unique(funcat2go.table, by = "funcatid") # (811)
+write.table(funcat2go.table, "./tidy/funcat_to_go_mappings_schema2.1.tsv", quote = FALSE, sep = "\t", row.names = FALSE)
+
+## Map GO terms to NC FunCat 2.1
+funcat.table <- data.table(citations.funcat[,c("geneid","funcatid")])
+
+setkey(funcat.table, funcatid)
+funcat.table[funcat2go.table, gotermid := i.gotermid]
+sum(is.na(funcat.table$gotermid)) # => 861 NAs of 5818 entries 
+
+## Write file with FunCat annotations and GO term mappings, one row per pair gene:term
+citations.funcat.go <- as.data.frame(na.omit(funcat.table)) # (4957)
+citations.funcat.go <- citations.funcat.go[order(citations.funcat.go$geneid), ]
+citations.funcat.go$pubmedid <- rep("PMID:15486203", length(citations.funcat.go$geneid))
+write.table(citations.funcat.go, "./tidy/citations_funcat_go_mappings.tsv", quote = FALSE, sep = "\t", row.names = FALSE)
+
+## Write file with FunCat annotations with no GO mapping
+citations.funcat.nogo <- as.data.frame(funcat.table[is.na(funcat.table$gotermid), ]) # (861)
+citations.funcat.nogo <- citations.funcat.nogo[order(citations.funcat.nogo$geneid),]
+citations.funcat.nogo$pubmedid <- rep("PMID:15486203", length(citations.funcat.nogo$geneid))
+write.table(citations.funcat.nogo, "./tidy/citations_funcat_nogo_mappings.tsv", quote = FALSE, sep = "\t", row.names = FALSE)
+
+# Write to GAF format. Using IEA and FunCat publication as reference
+citations.funcat.go <- read.table("./tidy/citations_funcat_go_mappings.tsv", sep = "\t", 
+                                  header = TRUE)
+funcat.gaf <- data.frame(db = rep("EuPathDB", length(citations.funcat.go$geneid)), 
+                          dbobjectid = citations.funcat.go$geneid, # geneid
+                          dbobjectsymbol = rep(NA, length(citations.funcat.go$geneid)), # gene name
+                          qualifier = rep(NA, length(citations.funcat.go$geneid)),
+                          goid = citations.funcat.go$gotermid,
+                          dbreference = citations.funcat.go$pubmedid,
+                          evidencecode = rep("IEA", length(citations.funcat.go$geneid)),
+                          withfrom = rep(NA, length(citations.funcat.go$geneid)), # none
+                          aspect = citations.funcat.go$termnamespace,
+                          dbobjectname = rep(NA, length(citations.funcat.go$geneid)), # product
+                          dbobjectsynonym = rep(NA, length(citations.funcat.go$geneid)), # name aliases
+                          dbobjecttype = rep("gene", length(citations.funcat.go$geneid)),
+                          taxon = rep("taxon:367110", length(citations.funcat.go$geneid)),
+                          date = rep("20140201", length(citations.funcat.go$geneid)),
+                          assignedby = rep("MIPS_funcat", length(citations.funcat.go$geneid)),
+                          annotationextension = rep(NA, length(citations.funcat.go$geneid)),
+                          geneproductformid = rep(NA, length(citations.funcat.go$geneid))
+                          )
+write.table(funcat.gaf, "./tidy/broad_nc_citations_gofuncat.gaf", sep = "\t", 
+            quote = FALSE, row.names = FALSE)
+
+# Need to map GO terms to aspect (B, C or F) (use GO.db package)
+library(GO.db)
+terms <- as.data.frame(GOTERM)
+terms <- terms[, c(2,4,7)]
+terms <- transmute(terms, goid1 = go_id, goid2 = Secondary, ontology = Ontology)
+terms$ontology <- gsub('.(.)','\\1',terms$ontology )
+# join primary and secondary go ids for mapping
+terms <- gather(terms, key = go, value = goid, na.rm = TRUE, goid1, goid2)
+terms <- terms[,-2]
+citations.funcat.go <- read.table("./tidy/broad_nc_citations_gofuncat.gaf",
+                                    sep = "\t", header = TRUE, na.strings = c("NA",""))
+
+# Remove leading space in the GO id column
+citations.funcat.go$goid <- as.character(citations.funcat.go$goid)
+citations.funcat.go$goid <- gsub('\\s','',citations.funcat.go$goid, perl = TRUE)
+
+# Map aspect
+citations.funcat.go.gaf <- merge(citations.funcat.go, terms, by.x = "goid", by.y = "goid", all.x = TRUE)
+citations.funcat.go.gaf <- distinct(citations.funcat.go.gaf)
+citations.funcat.go.gaf$aspect <- citations.funcat.go.gaf$ontology
+citations.funcat.go.gaf <- citations.funcat.go.gaf[,c(2,3,4,5,1,6:17)]
+
+# Write to file
+write.table(citations.funcat.go.gaf, "./tidy/broad_nc_citations_gofuncat.gaf", sep = "\t", 
+            quote = FALSE, row.names = FALSE, na = "")
+```
+
+### 3. Gene Ontology Annotations
+All GO annotations have the "pubmedid" field empty, but there is a publication reference (authors and title) in the "publication" field. We need the pubmedid for the GAF files
+
+Retrieve pubmedids from Entrez
+```{r, eval=FALSE}
+# Use rentrez package to recover missing pubmedIDs
+library(rentrez)
+    
+# Filter annotations with no pubmedid
+add_pubmedid <- citations.wide[((citations.wide$publication != "None") & (citations.wide$pubmedid == "None")), c("geneid", "publication", "pubmedid")]
+    
+# Remove html formating tags and keep only the title for searching
+add_pubmedid$publication <- gsub("^.*?<i>([^<]+?)</i>","\\1",add_pubmedid$publication, perl = TRUE)
+
+# Inicialize vector to store publications with retrieval errors
+nopub <- vector(mode = "integer")
+
+for (i in 1:length(add_pubmedid$publication)) { # test first with 1:100
+    if (grepl("^[^\\d]", add_pubmedid$publication[i], perl = TRUE)){
+        term <- add_pubmedid$publication[i]
+            
+        # Remove any NOTs in the title (will be translated to logical NOT by pubmed)
+        # Remove other characters/words that are making problems too
+        term <- gsub("not", "", term, ignore.case = TRUE, perl = TRUE)
+        term <- gsub(" \\w ", " ", term, ignore.case = TRUE, perl = TRUE)
+        term <- gsub(" de novo ", " ", term, ignore.case = TRUE, perl = TRUE)
+        result_paper <- entrez_search(db="pubmed", term=term )
+
+        if (length(result_paper$ids) != 1){
+            # If no result returned, or returned more than one paper, 
+            # store index for manual checking later
+            nopub <- c(nopub, i)
+    
+        }else{ # add pubmedid to table
+            add_pubmedid$pubMedId[i] <- result_paper$ids
+        }
+    
+    }else if(grepl("^(\\d){1,8}$", add_pubmedid$publication[i], perl = TRUE) ){
+        # If there is a pubmedid in the publication field, transfer it to the pubmedid field
+        add_pubmedid$pubMedId[i] <- add_pubmedid$publication[i]
+    }
+}
+# temporally store the downloaded pubmeids 
+write.table(add_pubmedid, "./data/add_pubmedid_temp.tsv", sep = "\t", row.names = FALSE, quote = FALSE)
+```
+
+Check the publications with retrieval errors
+```{r, eval = FALSE}
+addpubmedid.table <- data.table(add_pubmedid)
+missingpubs.table <- data.table(unique(addpubmedid.table[nopub,], by = "publication")) # (106 missing)
+write.table(select(missingpubs.table, publication, pubmedid), "./data/missingpubmedids_temp.tsv", sep = "\t", row.names = FALSE, quote = FALSE)
+# Load manually added pubmedids (93/106)
+missingpubsmanual <- read.table("./data/missingpubmeids_manual.tsv", sep = "\t", header = TRUE, colClasses = c("character","character"), fill = TRUE, quote = "")
+
+# Map manual pubmedids to the list of publications 
+for (i in 1:length(missingpubsmanual$publication)){
+    indx <- which(missingpubsmanual$publication[[i]] == addpubmedid.table$publication)
+    addpubmedid.table[indx, "pubmedid"] <- missingpubsmanual$pubmedid[[i]]
+}
+```
+
+Add the missing pubmedids to publications in the citations.wide table
+```{r, eval = FALSE}
+# Simplify addpubmedid.table, reduce it to unique entries that have pubmedids (faster mapping later)
+addpubmedid.unique.table <- unique(addpubmedid.table, by = "publication")
+addpubmedid.unique.table <- addpubmedid.unique.table[addpubmedid.unique.table$pubmedid != "None",]
+
+# Map pubmedids to publications (in citations.wide table) 
+for (i in 1:length(addpubmedid.unique.table$publication)){
+#for (i in 1:100){ # Weird bug, some pubmedids are not being replaced with the 1:length loop
+    indx <- which(grepl(addpubmedid.unique.table$publication[[i]], 
+                        citations.wide$publication, fixed = TRUE))
+    citations.wide[indx, "pubmedid"] <- addpubmedid.unique.table$pubmedid[[i]]
+    print(i)
+}
+```
+
+Parse GO term annotations to GAF format
+```{r, eval = FALSE}
+# Filter GO term annotations (6479)
+citations.goterms <- citations.wide[citations.wide$termontology == "Gene Ontology",                                    c("geneid","evidencecode","pubmedid","publication","termid","termname","termnamespace")] 
+
+# Evidence code, only the abbreviation needed
+citations.goterms$evidencecode <- gsub("^(.+?)\\/.+$", "\\1", 
+                                        citations.goterms$evidencecode, perl = TRUE)
+# Remove leading space in the GO id column
+citations.goterms$termid <- gsub('\\s','',citations.goterms$termid, perl = TRUE)
+# Aspect, abbreviation needed (C, F or B)
+citations.goterms$termnamespace <- gsub("cellular_component", "C", 
+                                         citations.goterms$termnamespace, perl = TRUE)
+citations.goterms$termnamespace <- gsub("biological_process", "P", 
+                                         citations.goterms$termnamespace, perl = TRUE)
+citations.goterms$termnamespace <- gsub("molecular_function", "F", 
+                                         citations.goterms$termnamespace, perl = TRUE)
+# Remove html formating tags
+citations.goterms$publication <- gsub("<br/><i>([^<]+?)</i>","\\. \\1",citations.goterms$publication, 
+                                      perl = TRUE)
+# Check GO annotations with no pubmeids, besides the ISS ones
+nopublications <- citations.goterms[citations.goterms$pubmedid == "None" &
+                                        citations.goterms$evidencecode != "ISS", ]
+# Remove annotations with ISS as evidence code and no withfrom or pubmedid
+citations.goterms <- filter(citations.goterms, !(citations.goterms$pubmedid == 'None' &
+                                citations.goterms$evidencecode == 'ISS'))
+
+# Also, check the assignedby and dbobjectype fields
+goterms.gaf <- data.frame(db = rep("EuPathDB", length(citations.goterms$geneid)), 
+                          dbobjectid = citations.goterms$geneid, # geneid
+                          dbobjectsymbol = rep(NA, length(citations.goterms$geneid)), # gene name
+                          qualifier = rep(NA, length(citations.goterms$geneid)),
+                          goid = citations.goterms$termid,
+                          dbreference = paste("PMID:", citations.goterms$pubmedid, sep = ""),
+                          evidencecode = citations.goterms$evidencecode,
+                          withfrom = rep(NA, length(citations.goterms$geneid)), # none
+                          aspect = citations.goterms$termnamespace,
+                          dbobjectname = rep(NA, length(citations.goterms$geneid)), # product
+                          dbobjectsynonym = rep(NA, length(citations.goterms$geneid)), # name aliases
+                          dbobjecttype = rep("gene", length(citations.goterms$geneid)),
+                          taxon = rep("taxon:367110", length(citations.goterms$geneid)),
+                          date = rep("20140201", length(citations.goterms$geneid)),
+                          assignedby = rep("Broad_NEUROSPORA", length(citations.goterms$geneid)),
+                          annotationextension = rep(NA, length(citations.goterms$geneid)),
+                          geneproductformid = rep(NA, length(citations.goterms$geneid))
+                          )
+# Add required GO_REF to annotations with no publication associated
+goterms.gaf$dbreference <- gsub("PMID:None", "GO_REF:0000001", goterms.gaf$dbreference)
+# Write to GAF
+write.table(goterms.gaf, "./tidy/broad_nc_citations_goterms.gaf", sep = "\t", quote = FALSE, 
+            row.names = FALSE, na = "")
+```
+
+Write also to tab file for reference
+```{r, eval = FALSE}
+write.table(citations.goterms, "./tidy/citations_goterms.tsv", sep = "\t", quote = FALSE, 
+            row.names = FALSE)
+```
+
+### 4. Publications
+Filter termontology entries type "None" (Publications)
+```{r, eval=FALSE}
+citations.pub <- citations.wide[citations.wide$termontology == "None", 
+                                c("geneid", "pubmedid", "publication")] # (1134)
+citations.pub$annotationmethod <- rep("Manual", length(citations.pub$geneid))
+citations.pub$annotationsource <- rep("Broad_CAP_NC12_7", length(citations.pub$geneid))
+
+
+# Remove html formating tags
+citations.pub$publication <- gsub("<br/><i>([^<]+?)</i>","\\. \\1",citations.pub$publication, 
+                                      perl = TRUE)
+
+# Check for references that are missing the PubMedIDs (OK)
+indx <- grep("^[^(\\d)]", citations.pub$pubmedid, perl = TRUE)
+citations.pub.noids <- citations.pub[indx, ]
+length(citations.pub.noids$publication) # (20/4134 OK)
+
+# Remove entries with no pubmedid and write publication file for loading
+indx <- grep("^\\d", citations.pub$pubmedid, perl = TRUE)
+citations.pub <- citations.pub[indx,]
+write.table(citations.pub, file = "./tidy/citations_publications.tsv", quote = FALSE, 
+            sep = "\t", row.names = FALSE)
+
+# Write publications with no PubmedID for reference
+write.table(citations.pub.noids, file = "./tidy/citations_publications_nopubmedid.tsv", 
+            quote = FALSE, sep = "\t", row.names = FALSE)
+```
+
+## ToDo
+- [X] Add aspect to Functional Catalogue GO term annotations 

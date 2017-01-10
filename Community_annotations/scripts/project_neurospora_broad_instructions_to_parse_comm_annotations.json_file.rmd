@@ -1,0 +1,326 @@
+---
+title: 'Neurospora Broad Community Annotation Project: comm_annotations.json'
+output: html_document
+---
+Parse the Broad Community Annotation Project dumps to tab files for easy loading into FungiDB
+
+Gene IDs correspond to version 5 or previous, parse to version 7
+
+### Load dataset into R
+#### Set working directory and load libraries
+```{r, eval=FALSE}
+setwd("~/Working/fungidb/fungidb_current/Project_Neurospora_Broad/")
+library(jsonlite)
+library(tidyr)
+library(dplyr)
+library(data.table)
+```
+
+#### Download file comm_annotations.json
+Source: Data dumps from Broad (201402) archived by Jason Stajich 
+```{r, eval=FALSE}
+# Create data folder
+if (!file.exists("data")) {
+  dir.create("data")
+}
+### Download files
+fileUrl <- "https://github.com/fungidb/neurospora/raw/master/Community_annotations/curator_raw/Broad_2014_02/comm_annotations.json.gz"
+download.file(fileUrl, destfile = "./data/comm_annotations.json.gz", method = "curl" )
+```
+
+#### Parse _comm_annotations.json_ to valid json format
+This json file (comm_annotations.json) does not validate (multiple errors). It needs fixing before loading into R. Validated using [JSON validator](http://jsonformatter.org/) 
+
+Use the script below to:
+
+* change all the single quotes (') in the key names for double quotes (")
+* Replace unquoted None (: None) by double quoted None (: "None")
+Script to parse the json file to a valid json format:
+
+```{r, eval=FALSE}
+arg1 <- "-a ./data/comm_annotations.json"
+arg2 <- "-o ./data/comm_annotations"
+cmd <- paste("perl", "./scripts/parse_broad_comm_annotations_to_validated_json.pl", arg1, arg2)
+system(cmd) 
+```
+
+#### Read json file:
+```{r, eval=FALSE}
+# Read json data
+
+commdata <- fromJSON("./data/comm_annotations_parsed.json")
+
+# delete "deleted" entries
+
+commdata <- commdata[commdata$`_status` != "deleted",]
+commdata <- transmute(commdata, geneid = `_src_tag`, version = `_src_grp`, citations = citations)
+
+# Unnest the citation column. 
+# The citation column has nested information. Entries contain a list with multiple dataframes as elements
+commdata.wide <- unnest(commdata, citations)
+
+# Deal with gene ID versions
+# version7 do not need change in gene IDs (current IDs) "NC12_CALLGENES_FINAL_7"
+# "NC10_MITO_CALLGENES_FINAL_2" does not have mappings, I am assuming they are current IDs 
+version5 <- which(commdata.wide$version == "NC10_CALLGENES_FINAL_5")
+commdata.wide$geneid[version5] <- paste0(commdata.wide$geneid[version5], ".5")
+version4 <- which(commdata.wide$version == "NC10_CALLGENES_FINAL_4_FEB")
+commdata.wide$geneid[version4] <- paste0(commdata.wide$geneid[version4], ".4")
+version3 <- which(commdata.wide$version == "NC7_FINAL_CALLGENES_3")
+commdata.wide$geneid[version3] <- paste0(commdata.wide$geneid[version3], ".3")
+```
+
+There are 3 kinds of annotations in the file: 'Gene Ontology', 'Fungal Anatomy Ontology' and publications ('None' in the term_ontology column)
+
+```{r, eval = FALSE}
+unique(commdata.wide$term_ontology)
+```
+
+Some GO terms with ISS as evidence code have with/from source in this file, it is a link to a protein in the publication field that needs to be parsed to the proper format for the GAF file (SGD:SXXX)
+
+Example format:
+http://db.yeastgenome.org/cgi-bin/locus.pl?sgdid=S000000777
+
+The GO term data seems to be duplicated for different annotation versions (ex: NCU08035.5 and NCU08035 current)
+
+### Tidy up column names
+
+```{r, eval = FALSE}
+
+commdata.wide <- transmute(commdata.wide, geneid = geneid, evidencecode = evidence_code, pubmedid = pubMedId, publication, termid = term_id, termname = term_name, termnamespace = term_namespace, termontology = term_ontology)
+```
+
+### Map gene IDs to version 7 (current)
+
+```{r, eval = FALSE}
+# Load mapping table
+mappingsone <- read.table("./tidy/broad_nc_geneid_mappings_all_one_column.tsv", 
+                          header = TRUE, sep = "\t")
+# Transform to tables for easy mapping and map
+
+mappingsone.table <- data.table(mappingsone)
+commdata.wide.table <- data.table(commdata.wide)
+setkey(mappingsone.table, geneidv)
+setkey(commdata.wide.table, geneid)
+commdata.wide.table[mappingsone.table, geneidv := i.geneid]
+
+# Keep the current gene IDs and remove the geneidv column
+commdata.test <- as.data.frame(commdata.wide.table)
+withmappings <- !is.na(commdata.test$geneidv)
+commdata.test$geneid[which(withmappings)] <- as.character(commdata.test[which(withmappings), "geneidv"])
+commdata.test <- commdata.test[,-9]
+
+# Remove duplicates
+commdata.test <- distinct(commdata.test)
+```
+
+### Parse publications that have PubMedIDs to tab file for loading
+Publications are in the rows with termontology = 'None'. Extract them to a tab file similar to the one used for the citations.json file
+
+```{r, eval = FALSE}
+commdata.publications <- filter(commdata.test, termontology == 'None')
+commdata.publications <- transmute(commdata.publications, geneid = geneid, pubmedid = pubmedid,
+                                publication = publication, annotationmethod = 'Manual',
+                                annotationsource = 'Broad_CAP')
+```
+
+Filter the publications without PubMedIDs
+```{r, eval = FALSE}
+commdata.publication.noid <- filter(commdata.publications, pubmedid == 'None')
+commdata.publications <- filter(commdata.publications, pubmedid != 'None')
+# Check that the remaining publications all have a number in the pubmedid field
+sum(grepl('^\\d+',commdata.publications$pubmedid, perl = TRUE )) # 20727 [OK]
+
+# Write to file
+write.table(commdata.publications, file = "./tidy/comm_annotations_publications.tsv", 
+            quote = FALSE, sep = "\t", row.names = FALSE)
+
+write.table(commdata.publication.noid, 
+            file = "./tidy/comm_annotations_publications_nopubmedid.tsv", 
+            quote = FALSE, sep = "\t", row.names = FALSE)
+```
+### Parse 'Fungal Anatomy Ontology' annotations
+FAO annotations are in the rows with termontology = 'Fungal Anatomy Ontology'
+```{r, eval = FALSE}
+# Filter annotations from the Fungal Anatomy Ontology with pubmedid references 
+commdata.fao <- filter(commdata.test, termontology == 'Fungal Anatomy Ontology', pubmedid != 'None')
+commdata.fao <- transmute(commdata.fao, geneid = geneid, faoid = termid, faotermname = termname, pubmedid = pubmedid, evidencecode = evidencecode)
+# Parse the evidence code to only 3 letters
+commdata.fao$evidencecode <- gsub('^(...).+','\\1',commdata.fao$evidencecode, perl =TRUE)
+# Write to file
+write.table(commdata.fao, file = "./tidy/comm_annotations_fungal_anatomy_ontology.tsv",
+            quote = FALSE, sep = "\t", row.names = FALSE)
+```
+### GO terms
+#### Filter GO terms
+```{r, eval = FALSE}
+commdata.goterms <- filter(commdata.test, termontology == 'Gene Ontology') 
+### Abbreviate evidence code and namespace
+commdata.goterms$evidencecode <- gsub('^(.+)\\/.+','\\1',commdata.goterms$evidencecode, perl = TRUE)
+commdata.goterms$termnamespace <- gsub('cellular_component','C',commdata.goterms$termnamespace, 
+                                       perl = TRUE)
+commdata.goterms$termnamespace <- gsub('biological_process','P',commdata.goterms$termnamespace, 
+                                       perl = TRUE)
+commdata.goterms$termnamespace <- gsub('molecular_function','F',commdata.goterms$termnamespace, 
+                                       perl = TRUE)
+# Remove termontology column
+commdata.goterms <- commdata.goterms[,-8]
+```
+#### Parse ISS with/from information in the publication column and no pubmedid
+```{r, eval = FALSE}
+commdata.goterms$withfrom <- rep(NA)
+yeastlocus <- grepl('http:\\/\\/[dw]?[wb]?[w]?\\.yeastgenome\\.org\\/cgi-bin\\/locus\\.[f]?pl\\?locus\\=(.+)|http:\\/\\/db.yeastgenome.org\\/cgi-bin\\/search\\/quickSearch\\?query\\=(SSB1)\\&Submit\\=Submit',
+                    commdata.goterms$publication, perl = TRUE)
+yeastsigid <- grepl('http:\\/\\/[dw]?[wb]?[w]?\\.?yeastgenome\\.org\\/cgi-bin\\/locus\\.[f]?pl\\?.+id\\=',
+                    commdata.goterms$publication, perl = TRUE)
+pombeids <- grepl('http:\\/\\/www\\.genedb\\.org.+name\\=([^&]+)',
+                    commdata.goterms$publication, perl = TRUE)
+candidaids <- grepl('http:\\/\\/www\\.candidagenome\\.org\\/cgi-bin\\/locus\\.pl\\?locus\\=',
+                    commdata.goterms$publication, perl = TRUE)
+uniprotids <- grepl('http:\\/\\/www\\.uniprot\\.org\\/uniprot\\/',
+                    commdata.goterms$publication, perl = TRUE)
+ebiuniprotids <- grepl('http:\\/\\/www\\.ebi\\.uniprot\\.org\\/uniprot-srv\\/uniProtView\\.do\\?proteinac\\=',
+                    commdata.goterms$publication, perl = TRUE)
+piruniprotids <- grepl('http:\\/\\/www\\.pir\\.uniprot\\.org\\/cgi-bin\\/upEntry\\?id\\=',
+                    commdata.goterms$publication, perl = TRUE)
+
+dictyids <- grepl('http:\\/\\/dictybase\\.org\\/db\\/cgi-bin\\/gene_page\\.pl\\?dictybaseid\\=',
+                    commdata.goterms$publication, perl = TRUE)
+
+# There are several different entries, SGD locus abbreviation (SGD_LOCUS), SGD locus ID (SGD:) and Pombe IDs (Pombase:), CGD IDs (CGD:) ...
+commdata.goterms$withfrom[which(yeastlocus)] <-  gsub('http:\\/\\/[dw]?[wb]?[w]?\\.yeastgenome\\.org\\/cgi-bin\\/locus\\.[f]?pl\\?locus\\=(.+)|http:\\/\\/db.yeastgenome.org\\/cgi-bin\\/search\\/quickSearch\\?query\\=(.+)\\&Submit\\=Submit','SGD_LOCUS:\\1\\2',
+            commdata.goterms$publication[which(yeastlocus)])
+
+commdata.goterms$withfrom[which(yeastsigid)] <- gsub('http:\\/\\/[dw]?[wb]?[w]?\\.?yeastgenome\\.org\\/cgi-bin\\/locus\\.[f]?pl\\?.+id\\=(.+)','SGD:\\1',
+            commdata.goterms$publication[which(yeastsigid)], perl = TRUE)
+
+commdata.goterms$withfrom[which(pombeids)] <- gsub('http:\\/\\/www\\.genedb\\.org.+name\\=([^\\&]+).+$','PomBase:\\1',
+            commdata.goterms$publication[which(pombeids)], perl = TRUE)
+
+commdata.goterms$withfrom[which(candidaids)] <- gsub('http:\\/\\/www\\.candidagenome\\.org\\/cgi-bin\\/locus\\.pl\\?locus\\=(.+)','CGD:\\1',
+            commdata.goterms$publication[which(candidaids)])
+
+commdata.goterms$withfrom[which(uniprotids)] <- gsub('http:\\/\\/www\\.uniprot\\.org\\/uniprot\\/(.+)','UniProtKB:\\1',
+            commdata.goterms$publication[which(uniprotids)], perl = TRUE)
+
+commdata.goterms$withfrom[which(ebiuniprotids)] <- gsub('http:\\/\\/www\\.ebi\\.uniprot\\.org\\/uniprot-srv\\/uniProtView\\.do\\?proteinac\\=(.+)','UniProtKB:\\1',
+            commdata.goterms$publication[which(ebiuniprotids)], perl = TRUE)
+
+commdata.goterms$withfrom[which(piruniprotids)] <- gsub('http:\\/\\/www\\.pir\\.uniprot\\.org\\/cgi-bin\\/upEntry\\?id\\=(.+)','UniProtKB:\\1',
+            commdata.goterms$publication[which(piruniprotids)], perl = TRUE)
+
+commdata.goterms$withfrom[which(dictyids)] <- gsub('http:\\/\\/dictybase\\.org\\/db\\/cgi-bin\\/gene_page\\.pl\\?dictybaseid\\=(.+)','dictyBase:\\1',
+            commdata.goterms$publication[which(dictyids)], perl = TRUE)
+
+# Empty the 'publication' data for these entries
+commdata.goterms$publication[which(!is.na(commdata.goterms$withfrom))] <- NA
+
+# Add missing pubmedid
+commdata.goterms$pubmedid[which(grepl('pnas.org', commdata.goterms$publication))] <- '16589312'
+
+# Remove entries with no pubmedid and no withfrom field
+commdata.goterms <- filter(commdata.goterms, pubmedid != 'None' | !is.na(commdata.goterms$withfrom))
+```
+
+#### Remove GO terms with IC evidence code and no with/from data (not valid)
+```{r, eval = FALSE}
+commdata.goterms <- filter(commdata.goterms, 
+                           !(evidencecode == 'IC' & is.na(commdata.goterms$withfrom)))
+```
+#### Remove GO terms with IGI evidence code and no with/from data (not valid)
+```{r, eval = FALSE}
+commdata.goterms <- filter(commdata.goterms, 
+                           !(evidencecode == 'IGI' & is.na(commdata.goterms$withfrom)))
+```
+
+#### Dump GO term annotations to GAF file
+```{r, eval = FALSE}
+# Add empty fields to 
+commdata.goterms.gaf <- data.frame(db = rep("EuPathDB", length(commdata.goterms$geneid)), 
+                          dbobjectid = commdata.goterms$geneid, # geneid
+                          dbobjectsymbol = rep(NA, length(commdata.goterms$geneid)), # gene name
+                          qualifier = rep(NA, length(commdata.goterms$geneid)),
+                          goid = commdata.goterms$termid,
+                          dbreference = as.character(paste("PMID:", commdata.goterms$pubmedid, sep = "")),
+                          evidencecode = commdata.goterms$evidencecode,
+                          withfrom = commdata.goterms$withfrom, # withfrom
+                          aspect = commdata.goterms$termnamespace,
+                          dbobjectname = rep(NA, length(commdata.goterms$geneid)), # product
+                          dbobjectsynonym = rep(NA, length(commdata.goterms$geneid)), # name aliases
+                          dbobjecttype = rep("gene", length(commdata.goterms$geneid)),
+                          taxon = rep("taxon:367110", length(commdata.goterms$geneid)),
+                          date = rep("20140201", length(commdata.goterms$geneid)),
+                          assignedby = rep("Broad_NEUROSPORA", length(commdata.goterms$geneid)),
+                          annotationextension = rep(NA, length(commdata.goterms$geneid)),
+                          geneproductformid = rep(NA, length(commdata.goterms$geneid))
+                          )
+
+# Add required GO_REF to ISSs
+issevidence <- commdata.goterms.gaf$evidencecode == 'ISS' & 
+    commdata.goterms.gaf$dbreference == 'PMID:None'
+commdata.goterms.gaf <- transform(commdata.goterms.gaf, dbreference = as.character(dbreference))
+commdata.goterms.gaf$dbreference[which(issevidence)] <- 'GO_REF:0000024'
+
+# Remove entries with no pubmedid
+commdata.goterms.gaf <- filter(commdata.goterms.gaf, 
+                               dbreference != 'PMID:None')
+
+commdata.goterms.gaf <- filter(commdata.goterms.gaf, 
+                               evidencecode != 'None')
+# Write to GAF
+write.table(commdata.goterms.gaf, "./tidy/broad_nc_comm_annotations_goterms.gaf", 
+            sep = "\t", quote = FALSE, row.names = FALSE, na = '')
+```
+
+## Combine GO terms from citations.json and comm_annotations.json
+
+```{r, eval = FALSE}
+
+citations.goterms.gaf <- read.table("./tidy/broad_nc_citations_goterms.gaf", 
+                                    sep = "\t", header = TRUE, na.strings = c("NA",""))
+citations.funcat.goterms.gaf <- read.table("./tidy/broad_nc_citations_gofuncat.gaf",
+                                    sep = "\t", header = TRUE, na.strings = c("NA",""))
+comm_data.goterms.gaf <- read.table("./tidy/broad_nc_comm_annotations_goterms.gaf",
+                                    sep = "\t", header = TRUE, na.strings = c("NA",""))
+# Concatenate files
+all.goterms.gaf <- bind_rows(citations.goterms.gaf, citations.funcat.goterms.gaf, comm_data.goterms.gaf)
+all.goterms.gaf <- all.goterms.gaf[order(all.goterms.gaf$dbobjectid), ]
+# Remove duplicates
+all.goterms.gaf <- distinct(all.goterms.gaf)
+# Write to file
+write.table(all.goterms.gaf, file = "./tidy/broad_nc_cap_fungidb_goterms.gaf", 
+                sep = "\t", row.names = FALSE, quote = FALSE, na = "")
+```
+
+## Combine pulications from citations.json and comm_annotations.json
+```{r, eval = FALSE}
+# read files
+citations.publications <- read.table("./tidy/citations_publications.tsv", sep = "\t",
+                                     header = TRUE, na.strings = c("NA",""), quote = "")
+commdata.publications <- read.table("./tidy/comm_annotations_publications.tsv",
+                                    sep ="\t", header = TRUE, na.strings = c("NA",""), quote = "")
+# Concatenate
+all.publications <- bind_rows(citations.publications, commdata.publications)
+all.publications <- all.publications[order(all.publications$geneid), ]
+# Remove duplicates
+all.publications$annotationsource <- 'Broad_CAP'
+all.publications <- distinct(all.publications, geneid, pubmedid, .keep_all = TRUE)
+all.publications <- all.publications[,-3]
+
+write.table(all.publications, file = "./tidy/broad_nc_cap_fungidb_publications.tsv",
+            sep = "\t", row.names = FALSE, quote = FALSE, na = "")
+```
+### ToDo
+
+- [X] Map geneIDs to version 7
+- [X] Parse publications that have PubMedIDs to tab file ('None' in the term_ontology column)
+- [X] Parse 'Fungal Anatomy Ontology' annotations (220) ('Fungal Anatomy Ontology' in the term_ontology column)
+- [X] Parse ISS with/from information in the publication column and no pubmedid
+- [X] Remove GO terms with IC evidence code and no with/from (all)
+- [X] Remove GO terms with ISS evidence code and no with/from or no publication
+- [X] Remove GO terms with IGI evidence code and no with/from (all)
+- [X] Log publications with no pubmedid => None
+- [X] Dump GO term annotations to GAF file
+
+- [X] Combine GO terms from citations.json and comm_annotations.json
+- [X] Combine publications terms from citations.json and comm_annotations.json
