@@ -1,0 +1,46 @@
+---
+title: "Broad Neurospora Phenotypes Code Book"
+output: html_document
+---
+
+Files extracted from raw dumps from the Broad Neurospora DB. See the [scripts folder](../scripts/) for details on how the files where generated.
+
+#### *broad_nc_phenotypes_growth_rates.tsv*:
+
+* geneid: gene IDs (*Neurospora crassa* OR74A version 7)
+
+* filename: name of the image file that corresponds with the annotation entry, png or jpeg formats.
+
+* typegrowth: type of growth being measured:
+
+    * aerial hyphae extension: (needs description)
+    
+    * linear growth: (needs description) 
+
+* conditions: growing conditions with the format *'medium_temperature_time part'*:
+ 
+    * medium: growth medium used
+    
+        * vm: minimal medium (needs description)
+
+        * vcm: complemented medium (needs description)
+  
+    * temperature: growth temperature in Celsius: 
+
+        * 25c: 25°C
+
+        * 37c: 37°C
+  
+    * time: (needs description)
+    
+        * 24h
+
+        * 48h
+  
+    * part: zone of the mycelium where the observation was made, corresponds with the type of photo. 
+
+        * edge: edge of the mycelium
+        
+        * plate: central area of the mycelium.
+
+
