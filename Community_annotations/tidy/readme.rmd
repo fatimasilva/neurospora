@@ -12,7 +12,7 @@ Original [Broad raw data dump](http://fungalgenomes.org/public/neurospora/data/B
 GO term annotations extracted from citations.json and comm_annotations.json files (raw data dumps from Broad). GO annotation file (GAF)
 
 #### broad_nc_cap_fungidb_publications.tsv
-Publication references extracted from citations.json comm_annotations.json files not indexed by PubMed (raw data dumps from Broad)
+Publication references extracted from citations.json comm_annotations.json files (raw data dumps from Broad)
 
 * geneid: geneIDs (version 7)
 * pubmedid: PubMedID references (NA)
