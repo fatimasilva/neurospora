@@ -185,7 +185,7 @@ Publication references extracted from comm_annotations.json file not indexed by 
 
 ### Other files
 #### funcat_to_go_mappings_schema2.1.tsv
-Mappings between [Functional Catalogue](http://www.helmholtz-muenchen.de/ibis/resourcesservices/services/funcat-the-functional-catalogue/index.html) (schema 2.1) ontology and Gene Ontology
+Mappings between [Functional Catalogue](https://www.helmholtz-muenchen.de/ibis/resourcesservices/genomics/funcat-the-functional-catalogue/) (schema 2.1) ontology and Gene Ontology
 
 * funcatid: Functional Catalogue term ID
 * gotermid: GO term ID
